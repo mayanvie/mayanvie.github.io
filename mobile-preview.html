@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xem portfolio trên điện thoại</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #fff;
+      color: #4a3728;
+      padding: 1.5rem 1.25rem 2.5rem;
+      line-height: 1.55;
+      max-width: 28rem;
+      margin-inline: auto;
+    }
+    h1 { font-size: 1.35rem; margin: 0 0 0.5rem; }
+    p { margin: 0 0 1rem; font-size: 0.95rem; }
+    .note {
+      background: #faf5e6;
+      border: 2px solid #4a3728;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .qr-block {
+      text-align: center;
+      margin: 1.25rem 0;
+      padding: 1rem;
+      border: 2px solid #4a3728;
+      border-radius: 12px;
+    }
+    .qr-block img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      margin: 0 auto 0.75rem;
+    }
+    .url {
+      word-break: break-all;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #b86b4b;
+    }
+    ul.links { list-style: none; padding: 0; margin: 0; }
+    ul.links li { margin-bottom: 0.65rem; }
+    ul.links a {
+      display: block;
+      padding: 0.75rem 1rem;
+      border: 2px solid #4a3728;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #4a3728;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    ul.links a:hover { background: #eef2e8; }
+    .small { font-size: 0.8rem; color: #6b5f55; }
+  </style>
+</head>
+<body>
+  <h1>Xem giao diện trên điện thoại</h1>
+  <p>Đây là cách xem <strong>đúng layout mobile thật</strong> — mở site trên trình duyệt phone (Safari / Chrome), không phải link “preview” ảo.</p>
+
+  <div class="note">
+    <strong>Điều kiện:</strong> Điện thoại và máy tính phải <strong>cùng Wi‑Fi</strong>. Server preview phải đang chạy (<code>MO-XEM-DEMO.bat</code> hoặc <code>serve-preview.ps1</code>).
+  </div>
+
+  <div class="qr-block">
+    <p><strong>Quét QR → mở trang About (timeline)</strong></p>
+    <img id="qr-about" width="200" height="200" alt="QR code About page">
+    <p class="url" id="url-about"></p>
+  </div>
+
+  <div class="qr-block">
+    <p><strong>Quét QR → mở trang chủ</strong></p>
+    <img id="qr-home" width="200" height="200" alt="QR code Home">
+    <p class="url" id="url-home"></p>
+  </div>
+
+  <p><strong>Hoặc bấm trực tiếp trên phone:</strong></p>
+  <ul class="links" id="link-list"></ul>
+
+  <p class="small">Trên máy tính chỉ <em>giả lập</em> mobile: mở <code>localhost:55088</code> → Chrome F12 → biểu tượng điện thoại (Ctrl+Shift+M). Không thay được xem trên màn hình thật.</p>
+
+  <script>
+    (function () {
+      var host = location.hostname;
+      var port = location.port || "55088";
+      var base = location.protocol + "//" + host + ":" + port;
+      var pages = [
+        { label: "Trang chủ (Home)", path: "/index.html" },
+        { label: "About + timeline", path: "/about.html" },
+        { label: "Work", path: "/work.html" },
+        { label: "How I Work", path: "/how-i-work.html" }
+      ];
+      var qrApi = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=";
+
+      document.getElementById("url-about").textContent = base + "/about.html";
+      document.getElementById("url-home").textContent = base + "/index.html";
+      document.getElementById("qr-about").src = qrApi + encodeURIComponent(base + "/about.html");
+      document.getElementById("qr-home").src = qrApi + encodeURIComponent(base + "/index.html");
+
+      var list = document.getElementById("link-list");
+      pages.forEach(function (p) {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = base + p.path;
+        a.textContent = p.label;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    })();
+  </script>
+</body>
+</html>
