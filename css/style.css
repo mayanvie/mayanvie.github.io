@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 
 :root {
-  --bg: #faf8f4;
-  --paper: #fffefb;
+  --bg: #f5f0e8;
+  --paper: #ffffff;
   --ink: #3a3530;
   --ink-soft: #6b645c;
-  --line: #e8e2d8;
-  --grid: rgba(58, 53, 48, 0.045);
+  --line: #e6e0d6;
+  --grid: rgba(58, 53, 48, 0.04);
   --c1: #c96a52;
   --c1-on: #9a4e3c;
   --c1-bg: #f9ebe6;
@@ -264,6 +264,47 @@ img { max-width: 100%; height: auto; }
   color: var(--ink);
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+
+/* —— Home spotlight (flagship case) —— */
+.spotlight {
+  margin: 0.35rem 0 2.75rem;
+  padding: 1.65rem 1.5rem 1.5rem;
+  background: var(--c1-bg);
+  border: 1px solid color-mix(in srgb, var(--c1) 22%, var(--line));
+  border-radius: calc(var(--r) + 4px);
+  box-shadow: 0 12px 36px rgba(201, 106, 82, 0.1);
+}
+
+.spotlight-label {
+  margin: 0 0 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c1-on);
+}
+
+.spotlight-head {
+  margin-bottom: 1rem;
+}
+
+.spotlight-head h2 {
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  color: var(--c1-on);
+}
+
+.spotlight .case--spotlight {
+  margin-top: 0;
+  background: var(--paper);
+  border: 1px solid color-mix(in srgb, var(--c1) 18%, var(--line));
+  border-left: 5px solid var(--c1);
+  box-shadow: 0 8px 24px rgba(58, 53, 48, 0.06);
+}
+
+.btn-sm--spotlight {
+  padding: 0.65rem 1.2rem;
+  font-size: 0.92rem;
 }
 
 .chips {
