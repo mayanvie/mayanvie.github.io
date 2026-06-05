@@ -186,17 +186,15 @@ img { max-width: 100%; height: auto; }
 .hero { padding: 3rem 0 2rem; }
 
 .hero--solo {
-  padding: 3.5rem 0 2.75rem;
-  max-width: 40em;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 0.25rem;
-}
-
-.hero--solo .hero-lead {
+  padding: 3.5rem 0 2rem;
   max-width: none;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0;
 }
 
-.hero--solo .hero-voice {
+.hero--solo .hero-lead,
+.hero--solo .hero-voice,
+.hero--solo .hero-skim {
   max-width: none;
 }
 
@@ -268,7 +266,7 @@ img { max-width: 100%; height: auto; }
 
 /* —— Home spotlight (flagship case) —— */
 .spotlight {
-  margin: 0.35rem 0 2.75rem;
+  margin: 0 0 2.75rem;
   padding: 1.65rem 1.5rem 1.5rem;
   background: var(--c1-bg);
   border: 1px solid color-mix(in srgb, var(--c1) 22%, var(--line));
