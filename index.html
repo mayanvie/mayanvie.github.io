@@ -29,56 +29,148 @@
   </header>
 
   <main class="wrap">
-    <section class="hero hero--solo">
+    <section class="hero hero--solo hero--home">
       <p class="kicker">Learning &amp; talent ops · Ho Chi Minh City</p>
       <h1>Hi, I'm <em>Duyen</em>.</h1>
-      <p class="hero-lead">Portfolio for L&amp;D and learning ops roles in Vietnam — built from tutoring, gallery guiding, program design, and writing on how adults actually learn.</p>
-      <p class="hero-skim">Only have a minute? <a href="cases/onboarding.html">Start with the onboarding case study</a>.</p>
-      <p class="hero-voice"><strong>From my notebook:</strong> People rarely stall because the content is too hard. The path isn't clear, or asking for help feels worse than staying quiet.</p>
+      <p class="hero-lead">I design learning programs for people who are quietly lost — not because the material is too hard, but because nobody made the path obvious.</p>
     </section>
 
-    <section class="spotlight" id="start-here" aria-labelledby="spotlight-title">
-      <p class="spotlight-label">Start here</p>
-      <header class="sec-head spotlight-head">
-        <h2 id="spotlight-title">Flagship case study</h2>
-        <p>One full story — reconstructed from real job experience. Best place to see how I think about onboarding.</p>
-      </header>
-      <article class="case case--spotlight">
-        <div>
-          <span class="tag tag--c1">case study</span>
-          <h3>Art Experience Guide — onboarding program</h3>
-          <p class="blurb">After working as a guide at a creative exhibition, I rebuilt a first-week path from gaps I saw on the floor — learner analysis, module outline, and one module written in full. Portfolio reconstruction, not a shipped product.</p>
-          <p class="quote">“Who trained you that week mattered more than the handbook.”</p>
-        </div>
-        <a href="cases/onboarding.html" class="btn-sm btn-sm--spotlight">Read story →</a>
-      </article>
-    </section>
-
-    <section class="sec" id="notes">
-      <span class="sec-eyebrow">How my work fits together</span>
+    <section class="sec home-gallery" id="projects" aria-labelledby="gallery-title">
+      <span class="sec-eyebrow">Selected work</span>
       <header class="sec-head">
-        <h2>Three threads</h2>
-        <p>Listen → structure → keep learning. Open a section on Work to see samples (more over time).</p>
+        <h2 id="gallery-title">Projects</h2>
+        <p>Three slots — one full case study now, more landing over time.</p>
       </header>
-      <div class="notes">
-        <article class="note note--1">
-          <span class="tag tag--c1 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> Note 01</span>
-          <h3>I listen</h3>
-          <p>Showing up for learners and understanding what they need first.</p>
-          <a href="work.html#act-1">Facilitation →</a>
+      <div class="project-gallery">
+        <article class="project-card project-card--lead">
+          <a class="project-card__link" href="cases/onboarding.html">
+            <div class="project-card__body">
+              <span class="project-card__tag">Case study</span>
+              <h3>Art Experience Guide — onboarding program</h3>
+              <p>7-day path from floor observations — learner analysis, outline, one module in full.</p>
+              <span class="project-card__cta">Read case study →</span>
+            </div>
+          </a>
         </article>
-        <article class="note note--2">
-          <span class="tag tag--c2 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> Note 02</span>
-          <h3>I structure</h3>
-          <p>Turning goals into paths and materials people can actually follow.</p>
-          <a href="work.html#act-2">Programs →</a>
+        <article class="project-card project-card--soon">
+          <div class="project-card__body">
+            <span class="project-card__tag project-card__tag--soon">Coming soon</span>
+            <h3>Facilitation — tutoring &amp; exhibition guiding</h3>
+            <p>Short write-ups on the quiet kind of stuck — before any program doc exists.</p>
+          </div>
         </article>
-        <article class="note note--3">
-          <span class="tag tag--c3 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> Note 03</span>
-          <h3>I keep learning</h3>
-          <p>Staying curious about how people learn and writing it down as I go.</p>
-          <a href="work.html#act-3">Essays →</a>
+        <article class="project-card project-card--soon">
+          <div class="project-card__body">
+            <span class="project-card__tag project-card__tag--soon">Coming soon</span>
+            <h3>Learner content plan &amp; timeline</h3>
+            <p>Topics, sequence, and weekly rhythm between sessions — sample from tutoring work.</p>
+          </div>
         </article>
+      </div>
+    </section>
+
+    <section class="sec home-flow" id="how-i-work" aria-labelledby="flow-title">
+      <span class="sec-eyebrow">Approach</span>
+      <header class="sec-head">
+        <h2 id="flow-title">How I work</h2>
+      </header>
+      <div class="flow-play" id="flow-play" data-active="0">
+        <div class="flow-play__progress" aria-hidden="true">
+          <span class="flow-play__progress-fill" style="width: 20%"></span>
+        </div>
+        <div class="flow-play__rail" role="tablist" aria-label="How I work steps">
+          <button type="button" class="flow-play__chip is-active" role="tab" id="flow-tab-0" aria-selected="true" aria-controls="flow-panel-0" data-step="0">
+            <span class="flow-play__chip-num">01</span>
+            <span class="flow-play__chip-label">Context</span>
+          </button>
+          <button type="button" class="flow-play__chip" role="tab" id="flow-tab-1" aria-selected="false" aria-controls="flow-panel-1" data-step="1" tabindex="-1">
+            <span class="flow-play__chip-num">02</span>
+            <span class="flow-play__chip-label">Sequence</span>
+          </button>
+          <button type="button" class="flow-play__chip" role="tab" id="flow-tab-2" aria-selected="false" aria-controls="flow-panel-2" data-step="2" tabindex="-1">
+            <span class="flow-play__chip-num">03</span>
+            <span class="flow-play__chip-label">Write</span>
+          </button>
+          <button type="button" class="flow-play__chip flow-play__chip--branch" role="tab" id="flow-tab-3" aria-selected="false" aria-controls="flow-panel-3" data-step="3" tabindex="-1">
+            <span class="flow-play__chip-num">04</span>
+            <span class="flow-play__chip-label">Rails</span>
+          </button>
+          <button type="button" class="flow-play__chip flow-play__chip--branch" role="tab" id="flow-tab-4" aria-selected="false" aria-controls="flow-panel-4" data-step="4" tabindex="-1">
+            <span class="flow-play__chip-num">05</span>
+            <span class="flow-play__chip-label">Edit</span>
+          </button>
+        </div>
+        <div class="flow-play__stage">
+          <article class="flow-play__panel is-active flow-play__panel--c1" role="tabpanel" id="flow-panel-0" aria-labelledby="flow-tab-0" data-step="0">
+            <span class="flow-play__panel-step">Step 01</span>
+            <h3 class="flow-play__panel-title">Start with context</h3>
+            <p class="flow-play__panel-text">Who's in the room, what they already carry, and the questions they're too embarrassed to ask in week one.</p>
+          </article>
+          <article class="flow-play__panel flow-play__panel--teal" role="tabpanel" id="flow-panel-1" aria-labelledby="flow-tab-1" data-step="1" hidden>
+            <span class="flow-play__panel-step">Step 02</span>
+            <h3 class="flow-play__panel-title">Sequence the week</h3>
+            <p class="flow-play__panel-text">Orientation before detail — a spine for the first days so nobody meets a wall of information at hour one.</p>
+          </article>
+          <article class="flow-play__panel flow-play__panel--teal" role="tabpanel" id="flow-panel-2" aria-labelledby="flow-tab-2" data-step="2" hidden>
+            <span class="flow-play__panel-step">Step 03</span>
+            <h3 class="flow-play__panel-title">Write for doing</h3>
+            <p class="flow-play__panel-text">Plain-language guides, rehearsals, and a lightweight check for “can you do it yet” — not slide decks alone.</p>
+          </article>
+          <article class="flow-play__panel flow-play__panel--purple" role="tabpanel" id="flow-panel-3" aria-labelledby="flow-tab-3" data-step="3" hidden>
+            <span class="flow-play__panel-step">Step 04 · parallel</span>
+            <h3 class="flow-play__panel-title">Keep the rails visible</h3>
+            <p class="flow-play__panel-text">Trackers, reminders, and handoffs — the unglamorous layer that stops things from quietly falling apart.</p>
+          </article>
+          <article class="flow-play__panel flow-play__panel--amber" role="tabpanel" id="flow-panel-4" aria-labelledby="flow-tab-4" data-step="4" hidden>
+            <span class="flow-play__panel-step">Step 05 · parallel</span>
+            <h3 class="flow-play__panel-title">Edit where friction shows</h3>
+            <p class="flow-play__panel-text">If the same question comes up twice, that's usually the next paragraph — not a new tool.</p>
+          </article>
+        </div>
+        <div class="flow-play__nav">
+          <button type="button" class="flow-play__nav-btn flow-play__nav-btn--prev" disabled aria-label="Previous step">← Back</button>
+          <span class="flow-play__counter"><span class="flow-play__counter-current">1</span> / 5</span>
+          <button type="button" class="flow-play__nav-btn flow-play__nav-btn--next" aria-label="Next step">Next →</button>
+        </div>
+      </div>
+      <p class="flow-play__foot"><a href="how-i-work.html">Read the full approach →</a></p>
+    </section>
+
+    <section class="sec home-bring" aria-labelledby="bring-title">
+      <span class="sec-eyebrow">Strengths</span>
+      <header class="sec-head">
+        <h2 id="bring-title">What I bring</h2>
+      </header>
+      <div class="home-bring-grid">
+        <article class="home-bring-card">
+          <span class="tag tag--c1">communication</span>
+          <h3>Storytelling &amp; layout</h3>
+          <p>I care whether a doc feels approachable enough to open, not just whether the information is technically there.</p>
+        </article>
+        <article class="home-bring-card">
+          <span class="tag tag--c2">learning science</span>
+          <h3>Plain-language writing</h3>
+          <p>I write about memory, motivation, and what blocks adults from learning — often it's not the content itself.</p>
+        </article>
+        <article class="home-bring-card">
+          <span class="tag tag--c3">operations</span>
+          <h3>Systems that stick</h3>
+          <p>Modules, checklists, trackers, follow-up — so programs can run again without reinventing everything each time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sec home-cta" aria-label="Get in touch">
+      <div class="connect-strip">
+        <div class="connect-strip__text">
+          <span class="sec-eyebrow">Let's talk</span>
+          <p>Open to <strong>Learning &amp; Talent Operations</strong> and L&amp;D roles in Vietnam. Email or connect on LinkedIn — happy to walk through the case study.</p>
+        </div>
+        <div class="connect-strip__links">
+          <a href="mailto:kieuduyen.contact@gmail.com" class="btn btn-cta">Email me</a>
+          <a href="https://www.linkedin.com/in/lekieuduyen" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="cv/resume.pdf" class="btn btn-outline" download>Download CV</a>
+        </div>
       </div>
     </section>
   </main>
@@ -91,5 +183,66 @@
       <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
     </span>
   </footer>
+  <script>
+    (function () {
+      var root = document.getElementById('flow-play');
+      if (!root) return;
+      var chips = root.querySelectorAll('.flow-play__chip');
+      var panels = root.querySelectorAll('.flow-play__panel');
+      var fill = root.querySelector('.flow-play__progress-fill');
+      var prevBtn = root.querySelector('.flow-play__nav-btn--prev');
+      var nextBtn = root.querySelector('.flow-play__nav-btn--next');
+      var counter = root.querySelector('.flow-play__counter-current');
+      var total = chips.length;
+      var active = 0;
+
+      function setStep(index) {
+        active = index;
+        root.dataset.active = String(index);
+        chips.forEach(function (chip, i) {
+          var on = i === index;
+          chip.classList.toggle('is-active', on);
+          chip.setAttribute('aria-selected', on ? 'true' : 'false');
+          chip.tabIndex = on ? 0 : -1;
+        });
+        panels.forEach(function (panel, i) {
+          var on = i === index;
+          panel.classList.toggle('is-active', on);
+          panel.hidden = !on;
+        });
+        if (fill) fill.style.width = ((index + 1) / total * 100) + '%';
+        if (counter) counter.textContent = String(index + 1);
+        if (prevBtn) prevBtn.disabled = index === 0;
+        if (nextBtn) {
+          nextBtn.disabled = index === total - 1;
+          nextBtn.textContent = index === total - 1 ? 'Done' : 'Next →';
+        }
+      }
+
+      chips.forEach(function (chip) {
+        chip.addEventListener('click', function () {
+          setStep(Number(chip.dataset.step));
+        });
+        chip.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+            e.preventDefault();
+            setStep(Math.min(active + 1, total - 1));
+            chips[active].focus();
+          } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+            e.preventDefault();
+            setStep(Math.max(active - 1, 0));
+            chips[active].focus();
+          }
+        });
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', function () { setStep(Math.max(active - 1, 0)); });
+      if (nextBtn) nextBtn.addEventListener('click', function () {
+        if (active < total - 1) setStep(active + 1);
+      });
+
+      setStep(0);
+    })();
+  </script>
 </body>
 </html>
