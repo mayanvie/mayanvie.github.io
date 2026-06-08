@@ -1149,14 +1149,19 @@ table.program-table th {
 }
 
 .project-card--soon {
+  opacity: 0.55;
   border-style: dashed;
+  border-color: color-mix(in srgb, var(--line) 38%, var(--bg));
   background: var(--bg);
+  box-shadow: none;
+  cursor: default;
+  transition: none;
 }
 
 .project-card--soon:hover {
-  transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--ink-soft) 35%, var(--line));
-  box-shadow: 0 10px 24px rgba(58, 53, 48, 0.07);
+  transform: none;
+  border-color: color-mix(in srgb, var(--line) 38%, var(--bg));
+  box-shadow: none;
 }
 
 .project-card__tag {
@@ -1215,7 +1220,7 @@ table.program-table th {
 
 .project-card__cta {
   align-self: flex-start;
-  margin-top: 0.45rem;
+  margin-top: auto;
   padding: 0.42rem 0.85rem;
   font-size: 0.84rem;
   font-weight: 700;
@@ -1233,6 +1238,176 @@ table.program-table th {
 .project-card__link:hover .project-card__cta {
   transform: translateX(2px);
   background: color-mix(in srgb, #fff 92%, var(--c1-bg));
+}
+
+.project-card:has(.project-card__link):not(.project-card--lead):hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--c1) 28%, var(--line));
+  box-shadow: 0 12px 28px rgba(58, 53, 48, 0.08);
+}
+
+.project-card:not(.project-card--lead) .project-card__tag:not(.project-card__tag--soon) {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.project-card__thread {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.project-card--lead .project-card__thread {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.project-card__cta--outline {
+  color: var(--c1-on);
+  background: var(--paper);
+  border: 1px solid color-mix(in srgb, var(--c1) 35%, var(--line));
+}
+
+.project-card__link:hover .project-card__cta--outline {
+  background: var(--c1-bg);
+}
+
+/* —— Work gallery —— */
+.work-gallery {
+  margin: 0.25rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.work-gallery__block--listen {
+  border-left: 4px solid var(--c1);
+  padding-left: 1.15rem;
+}
+
+.work-gallery__block--structure {
+  border-left: 4px solid var(--c2);
+  padding-left: 1.15rem;
+}
+
+.work-gallery__block--learn {
+  border-left: 4px solid var(--c3);
+  padding-left: 1.15rem;
+}
+
+.work-gallery__head {
+  margin-bottom: 1.15rem;
+}
+
+.work-gallery__head h2 {
+  font-size: 1.45rem;
+  margin: 0.4rem 0 0.3rem;
+}
+
+.work-gallery__head p {
+  margin: 0;
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  max-width: 40em;
+  line-height: 1.55;
+}
+
+.work-gallery__layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem;
+  align-items: stretch;
+}
+
+.work-gallery .project-card {
+  min-height: 14.5rem;
+  height: 100%;
+}
+
+.work-gallery .project-card__link {
+  height: 100%;
+}
+
+.work-gallery .project-card__body {
+  height: 100%;
+  min-height: 14.5rem;
+}
+
+.work-gallery .project-card--lead .project-card__body h3 {
+  font-size: 1.18rem;
+}
+
+.work-gallery__foot {
+  margin: 1.15rem 0 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.work-gallery__foot a {
+  font-weight: 600;
+  color: var(--c1-on);
+  text-decoration: none;
+}
+
+.work-gallery__foot a:hover {
+  text-decoration: underline;
+}
+
+.essay-page__sub {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.essay-prose {
+  max-width: 42em;
+  margin-top: 1.5rem;
+}
+
+.essay-prose > p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.essay-figure {
+  margin: 1.25rem 0;
+}
+
+.essay-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--r);
+  border: 1px solid var(--line);
+}
+
+.essay-quote {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1rem;
+  background: var(--c3-bg);
+  border-left: 4px solid var(--c3);
+  border-radius: 0 var(--r) var(--r) 0;
+}
+
+.essay-quote p {
+  margin: 0 0 0.65rem;
+  font-size: 0.94rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+.essay-quote p:last-child {
+  margin-bottom: 0;
+}
+
+.essay-refs {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
 }
 
 .home-flow {
@@ -1497,6 +1672,10 @@ table.program-table th {
   .lab-card > .btn { justify-self: start; }
   .project-gallery,
   .home-bring-grid { grid-template-columns: 1fr; }
+  .work-gallery__block { padding-left: 0.85rem; }
+  .work-gallery__layout { grid-template-columns: 1fr; }
+  .work-gallery .project-card,
+  .work-gallery .project-card__body { min-height: 0; }
   .flow-play__rail { gap: 0.35rem; }
   .flow-play__chip-label { display: none; }
   .flow-play__chip { padding: 0.5rem 0.65rem; }
