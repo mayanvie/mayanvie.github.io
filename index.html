@@ -18,10 +18,14 @@
           <span class="brand-nick">mayanvie</span>
         </span>
       </a>
-      <nav class="nav">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav">
         <a href="index.html" class="on">Home</a>
         <a href="work.html">Work</a>
-        <a href="how-i-work.html">How I Work</a>
         <a href="about.html">About</a>
         <a href="cv/resume.pdf" class="pill" download>Download CV</a>
       </nav>
@@ -132,7 +136,7 @@
           <button type="button" class="flow-play__nav-btn flow-play__nav-btn--next" aria-label="Next step">Next →</button>
         </div>
       </div>
-      <p class="flow-play__foot"><a href="how-i-work.html">Read the full approach →</a></p>
+      <p class="flow-play__foot"><a href="work.html#approach">Read the full approach →</a></p>
     </section>
 
     <section class="sec home-bring" aria-labelledby="bring-title">
@@ -182,6 +186,7 @@
       <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
     </span>
   </footer>
+  <script src="js/nav.js"></script>
   <script>
     (function () {
       var root = document.getElementById('flow-play');

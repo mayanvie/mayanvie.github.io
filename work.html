@@ -18,10 +18,14 @@
           <span class="brand-nick">mayanvie</span>
         </span>
       </a>
-      <nav class="nav">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav">
         <a href="index.html">Home</a>
         <a href="work.html" class="on">Work</a>
-        <a href="how-i-work.html">How I Work</a>
         <a href="about.html">About</a>
         <a href="cv/resume.pdf" class="pill" download>Download CV</a>
       </nav>
@@ -32,6 +36,7 @@
     <header class="page-head">
       <span class="sec-eyebrow">Portfolio</span>
       <h1>Work</h1>
+      <p class="lead" id="approach">Day one is emotional logistics as much as information. I design for clarity people will actually open, and practice they'll try before stakes go up — whether that's a guide's first week or a program that has to run again next month.</p>
     </header>
 
     <div class="work-gallery" aria-label="Work samples">
@@ -138,6 +143,33 @@
         <p class="work-gallery__foot">More on <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener"><em>One note at a time</em> →</a></p>
       </section>
     </div>
+
+    <section class="sec">
+      <span class="sec-eyebrow">Toolkit</span>
+      <h2>Tools I use</h2>
+      <div class="skill-tags">
+        <span class="meta-tag">Google Sheets</span>
+        <span class="meta-tag">Notion</span>
+        <span class="meta-tag">Asana</span>
+        <span class="meta-tag">Canva</span>
+        <span class="meta-tag">Google Docs</span>
+        <span class="meta-tag">Confluence-style docs</span>
+        <span class="tag tag--c3">Comfortable learning new systems quickly</span>
+      </div>
+      <p class="text-muted" style="margin-top:1rem;">I pick tools for findability and handoff — not because a new app is exciting, but because someone else will need the same file next month.</p>
+    </section>
+
+    <section class="lms-section">
+      <span class="sec-eyebrow">Systems</span>
+      <h2>LMS &amp; corporate systems</h2>
+      <p>Honestly — I haven't run an enterprise LMS in production yet. But I already think like an ops teammate: clear pathways, enrollments, completion signals, and an experience that answers “what do I do today?” without a scavenger hunt.</p>
+      <p>I'm ready to learn tools like iLearn (or similar) quickly. The logic isn't new — sequenced content, practice tasks, pass rules. The interface is.</p>
+    </section>
+
+    <p class="center-cta">
+      <a href="cv/resume.pdf" class="btn btn-cta btn-arrow" download>Download CV</a>
+      <a href="mailto:kieuduyen.contact@gmail.com" class="btn btn-outline">Get in touch</a>
+    </p>
   </main>
 
   <footer class="foot wrap">
@@ -149,5 +181,6 @@
     </span>
   </footer>
 
+  <script src="js/nav.js"></script>
 </body>
 </html>
