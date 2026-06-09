@@ -1247,6 +1247,8 @@ table.program-table th {
   text-transform: uppercase;
   padding: 0.32rem 0.62rem;
   border-radius: 999px;
+  hyphens: none;
+  overflow-wrap: break-word;
 }
 
 .project-card--lead .project-card__tag {
@@ -1274,8 +1276,8 @@ table.program-table th {
   line-height: 1.22;
   letter-spacing: -0.01em;
   color: var(--ink);
-  overflow-wrap: anywhere;
-  hyphens: auto;
+  hyphens: none;
+  overflow-wrap: break-word;
 }
 
 .project-card--lead .project-card__body h3 {
@@ -1974,6 +1976,13 @@ table.program-table th {
   .project-card__body h3 {
     font-size: 1.02rem;
     line-height: 1.3;
+    hyphens: none;
+    overflow-wrap: break-word;
+  }
+
+  .project-card__tag {
+    hyphens: none;
+    overflow-wrap: break-word;
   }
 
   .project-card__body p {
