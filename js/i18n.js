@@ -507,8 +507,8 @@
     wrap.setAttribute('role', 'group');
     wrap.setAttribute('aria-label', t('lang.label'));
     wrap.innerHTML =
-      '<button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>' +
-      '<button type="button" class="lang-switch__btn" data-lang="vi" aria-pressed="false">VI</button>';
+      '<button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English">EN</button>' +
+      '<button type="button" class="lang-switch__btn" data-lang="vi" aria-pressed="false" aria-label="Xem bản tiếng Việt">Tiếng Việt</button>';
     var cv = nav.querySelector('.pill');
     if (cv) nav.insertBefore(wrap, cv);
     else nav.appendChild(wrap);
