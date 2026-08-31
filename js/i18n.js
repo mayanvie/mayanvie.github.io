@@ -377,7 +377,7 @@
       'case.m2': '7 ngày · 26 giờ',
       'case.m3': 'Portfolio tái dựng',
       'case.lead': '<strong>Vai trò:</strong> Thiết kế learning & onboarding (thời làm Art Experience Guide)<br><strong>Tổ chức:</strong> Triển lãm sáng tạo (tên được giữ kín)',
-      'case.note': '<strong>Ghi chú:</strong> Case này được <strong>tái dựng</strong> từ những vấn đề mình quan sát trên sàn, không phải báo cáo sau khi triển khai. Mình chưa có số liệu rollout. Logic thiết kế là thật; số liệu sẽ có sau pilot.',
+      'case.note': '<strong>Ghi chú:</strong> Case này được <strong>tái dựng</strong> từ những vấn đề mình quan sát trong quy trình cũ, không phải báo cáo sau khi triển khai. Mình chưa có số liệu rollout. Logic thiết kế là thật; số liệu sẽ có sau pilot.',
       'case.sum1.t': 'Người học',
       'case.sum1.p': 'Guide mới, thường 18–30 tuổi — sinh viên hoặc người chuyển ngành từ nghệ thuật, khoa học xã hội và ngôn ngữ. Họ biết thông tin công ty cơ bản nhưng chưa rõ quy trình, cơ cấu, nội dung triển lãm và cách xử lý tình huống bất ngờ.',
       'case.sum2.t': 'Vấn đề',
