@@ -1192,6 +1192,126 @@ table.program-table th {
 .mt-0 { margin-top: 0; }
 .mb-2 { margin-bottom: 1.5rem; }
 
+/* —— Job-aid bits (cashier guide) —— */
+.guide-pin {
+  margin: 0 0 1.5rem;
+  padding: 1.1rem 1.2rem 1rem;
+  background: var(--c3-bg);
+  border: 1px solid color-mix(in srgb, var(--c3) 28%, var(--line));
+  border-left: 4px solid var(--c3);
+  border-radius: var(--r);
+}
+
+.guide-pin__label {
+  margin: 0 0 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c3-on);
+}
+
+.guide-pin ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.guide-pin li {
+  font-size: 0.94rem;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0.35rem 0;
+}
+
+.check-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.4rem 0 1rem;
+}
+
+.check-list li {
+  position: relative;
+  padding: 0.35rem 0 0.35rem 1.7rem;
+  border-bottom: 1px dashed color-mix(in srgb, var(--line) 80%, transparent);
+}
+
+.check-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 1.5px solid var(--c2-on);
+  border-radius: 3px;
+  background: var(--paper);
+}
+
+.flow-label {
+  margin: 0.85rem 0 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.flow-steps {
+  margin: 0.2rem 0 0.85rem;
+  padding-left: 1.5rem;
+  counter-reset: flow;
+  list-style: none;
+}
+
+.flow-steps li {
+  position: relative;
+  padding: 0.28rem 0 0.28rem 0.35rem;
+  counter-increment: flow;
+}
+
+.flow-steps li::before {
+  content: counter(flow);
+  position: absolute;
+  left: -1.45rem;
+  top: 0.28rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: var(--c2-bg);
+  color: var(--c2-on);
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qa-list { margin: 0.75rem 0 0; }
+
+.qa-item {
+  margin: 0 0 0.75rem;
+  padding: 0.85rem 1rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.qa-item dt {
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 0.35rem;
+  font-size: 0.92rem;
+}
+
+.qa-item dd {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.qa-item--open {
+  border-style: dashed;
+  background: color-mix(in srgb, var(--bg) 55%, var(--paper));
+}
+
 .logo-mark { color: var(--c1); }
 
 /* —— Home (gallery, flow, bring) —— */

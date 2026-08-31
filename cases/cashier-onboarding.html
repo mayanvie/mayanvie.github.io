@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order &amp; Cashier Onboarding Guide — Le Kieu Duyen</title>
+  <meta name="description" content="Onboarding guide for new Order &amp; Cashier staff at an independent café/restaurant — shift sequence, POS rules, and a job aid written from the floor.">
+  <meta name="theme-color" content="#F5F0E8">
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('has-motion');</script>
+  <link rel="stylesheet" href="../css/style.css?v=5">
+</head>
+<body data-page="case-cashier">
+  <header class="top">
+    <div class="wrap">
+      <a href="../index.html" class="brand" aria-label="Le Kieu Duyen — home">
+        <span class="dot" aria-hidden="true">✦</span>
+        <span class="brand-text">
+          <span class="brand-name">Le Kieu Duyen</span>
+          <span class="brand-nick">mayanvie</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-attr="aria-label:nav.menuOpen">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav">
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="../work.html" class="on" data-i18n="nav.work">Work</a>
+        <a href="../about.html" data-i18n="nav.about">About</a>
+        <a href="../cv/resume.pdf" class="pill" download data-i18n="nav.cv">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page case-page">
+    <p class="back-link"><a href="../work.html#act-2" data-i18n="cashier.back">← Back to work</a></p>
+    <span class="tag tag--c2" data-i18n="cashier.tag">case study</span>
+    <h1 data-i18n="cashier.title">Order &amp; Cashier onboarding guide</h1>
+    <div class="case-meta">
+      <span class="meta-tag" data-i18n="cashier.m1">Process documentation · Job aid</span>
+      <span class="meta-tag" data-i18n="cashier.m2">FOH · café / restaurant</span>
+      <span class="tag tag--c3" data-i18n="cashier.m3">Written on the job · not yet piloted</span>
+    </div>
+    <p class="lead" data-i18n-html="cashier.lead"><strong>Role:</strong> Front-of-house trainee — wrote this on my own initiative<br>
+    <strong>Context:</strong> Independent café/restaurant, Ho Chi Minh City (name kept confidential)</p>
+    <aside class="case-note" data-i18n-html="cashier.note">
+      <strong>Portfolio note:</strong> I wrote this guide during a front-of-house traineeship, after noticing that new hires learned the register and order flow inconsistently depending on who trained them that day. The manager reviewed and approved it for use. I left the role shortly after, so it has not yet been piloted with a new hire — the design logic is real, rollout data is not. Business name, cash amounts, and the promotion mechanic have been removed or generalised for public sharing.
+    </aside>
+
+    <div class="summary-grid summary-grid--case mb-2">
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--learners" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="14" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M14 28c1.5-4 5-6.5 8-6.5s6.5 2.5 8 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="44" cy="16" r="5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M36 30c1.2-3.5 4.5-5.5 8-5.5s6.8 2 8 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="48" y="6" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M52 10h8M52 14h5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="cashier.sum1.t">Learners</strong>
+          <p data-i18n="cashier.sum1.p">New Order &amp; Cashier staff. High-turnover, in-person role. They need to greet guests, take orders, handle payment, make coffee, and help the floor when it’s quiet — often on the same shift they first meet the register.</p>
+        </div>
+      </div>
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--problem" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 14h28M12 20h22M12 26h26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="52" cy="22" r="10" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M52 17v6l4 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M18 38h36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 4"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="cashier.sum2.t">Problem</strong>
+          <p data-i18n="cashier.sum2.p">Training lived in whoever was on shift. The register, cash float, dine-in vs. app orders, and what to do when something went wrong all sounded slightly different depending on who explained them. Easy to guess. Guessing is expensive at a till.</p>
+        </div>
+      </div>
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--did" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="8" width="24" height="16" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="10" y="30" width="24" height="16" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 16h12M16 38h10" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M40 16h6l3 3 8-9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M40 38h6l3 3 8-9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="cashier.sum3.t">What I did</strong>
+          <p data-i18n="cashier.sum3.p">Wrote a shift-sequenced guide a new hire can open on day one: opening checklist, dine-in and app flows, error rule, close-of-shift, a few non-negotiables, and a glossary. Manager approved it. Not yet used with a new hire.</p>
+        </div>
+      </div>
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--goal" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 40c8-16 18-24 28-24s16 6 20 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 4"/>
+            <circle cx="56" cy="14" r="5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M53.5 14l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="16" y="28" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="cashier.sum4.t">Design goal</strong>
+          <p data-i18n="cashier.sum4.p">A new cashier can work a shift in time order without waiting for a senior to be free. The few rules that must not be guessed — float, payment type, never overwrite, ask the lead — sit at the top, not buried in a handbook.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="content-block content-block--case-key">
+      <h2>Why I wrote it this way</h2>
+      <p>On a busy till, people don’t read a chapter. They need the next action. So the guide follows a real shift: open → during (dine-in, then apps, then errors) → close. Rules that cost money if you get them wrong sit in a pin at the top, not at the end.</p>
+      <p>I kept one Q&amp;A slot empty on purpose. The first real rush, the first printer jam, the first out-of-stock dish — those belong in the document after they’ve happened, not invented from a desk.</p>
+    </section>
+
+    <aside class="guide-pin" aria-labelledby="pin-title">
+      <p class="guide-pin__label" id="pin-title">Quick summary — read this first</p>
+      <ul>
+        <li><strong>Core tasks:</strong> greet guests, take orders, handle payment, make coffee — assist floor service when free</li>
+        <li>The cash float is counted at the start and end of every shift</li>
+        <li>Dine-in guests pay “Cash”; app orders (GrabFood, ShopeeFood…) are marked “Bank Transfer”</li>
+        <li>Wrong order → delete in the system and re-enter a new one; never overwrite an existing order</li>
+        <li>Unsure about anything → ask the shift lead immediately, don’t guess</li>
+      </ul>
+    </aside>
+
+    <section class="content-block content-block--case-plain">
+      <h2>1. Role overview</h2>
+      <p>The Order &amp; Cashier role is based mainly at the front register and covers:</p>
+      <ul>
+        <li>Taking guest orders and greeting guests</li>
+        <li>Processing payments and handling receipts</li>
+        <li>Answering guest questions</li>
+        <li>Preparing and selling coffee</li>
+      </ul>
+      <p>When things are quiet and their own tasks are done, Order &amp; Cashier staff are expected to help floor service so the shift runs smoothly.</p>
+    </section>
+
+    <section class="content-block content-block--case-key">
+      <h2>2. A shift, start to finish</h2>
+      <p>This section follows the actual time order of a shift — work through it in sequence.</p>
+
+      <h3>2.1 Start of shift — before opening</h3>
+      <ul class="check-list">
+        <li>Count the starting cash float</li>
+        <li>Open the point-of-sale system</li>
+        <li>Turn on the grinder and espresso machine — bleed both steam valves, check the water level</li>
+        <li>Check the handover notebook: if any order was logged on paper yesterday, enter it into the system today</li>
+        <li>Check coffee supplies are fully stocked: coffee, ice, sugar, cups, spoons, straws</li>
+        <li>Connect the shop phone to the bluetooth speaker; confirm delivery apps (GrabFood, ShopeeFood, etc.) are switched on</li>
+        <li>Complete the opening ritual set-up at the front counter</li>
+        <li>Turn on the diffuser</li>
+        <li>Clean and set up the work area</li>
+      </ul>
+
+      <h3>2.2 During the shift — dine-in guests</h3>
+      <p class="flow-label">a) Taking the order</p>
+      <ol class="flow-steps">
+        <li>Guest arrives → greet them</li>
+        <li>Hand over the menu</li>
+        <li>Enter the order into the system, send it to the kitchen</li>
+      </ol>
+      <p class="flow-label">b) Cashing out once the guest has finished</p>
+      <ol class="flow-steps">
+        <li>Select “Sell to walk-in customer”</li>
+        <li>Enter the table number and items</li>
+        <li>Generate the provisional bill and show it to the guest</li>
+        <li>Process payment, select “Cash”</li>
+        <li>File the receipt copy for the shop’s records</li>
+      </ol>
+
+      <h3>2.3 During the shift — app orders (GrabFood, ShopeeFood, etc.)</h3>
+      <p class="flow-label">a) Receiving the order</p>
+      <ol class="flow-steps">
+        <li>Check the item details and any guest notes carefully</li>
+        <li>Note the order code</li>
+        <li>Notify the kitchen</li>
+        <li>Confirm the order as completed in the app</li>
+      </ol>
+      <p class="flow-label">b) Logging the order in the POS system</p>
+      <ol class="flow-steps">
+        <li>Select the relevant delivery app</li>
+        <li>Enter the ordered items</li>
+        <li>Adjust pricing to match what’s shown in the app</li>
+        <li>Apply any discount shown</li>
+        <li>Select “Bank Transfer”, process payment</li>
+        <li>Print the kitchen ticket and the receipt — file the receipt copy for the shop’s records</li>
+      </ol>
+
+      <h3>2.4 During the shift — order errors and cancellations</h3>
+      <p>When an order is entered incorrectly or needs to be cancelled: go into the system, delete the incorrect order, and re-enter it correctly. <strong>Never overwrite an existing order.</strong></p>
+
+      <h3>2.5 End of shift — before clocking out</h3>
+      <ul class="check-list">
+        <li>Recount the cash float and reconcile it against the app/system bills</li>
+        <li>Hand over the float and any notes to the next shift</li>
+      </ul>
+    </section>
+
+    <section class="content-block content-block--case-plain">
+      <h2>3. Common situations — quick reference</h2>
+      <p>For lookup when something unexpected comes up mid-shift.</p>
+      <dl class="qa-list">
+        <div class="qa-item">
+          <dt>Q: It’s too busy to enter every order or process payment right away — what do I do?</dt>
+          <dd>A: Take the order on your phone or jot it on paper first; enter it into the system / cash out once things settle down.</dd>
+        </div>
+        <div class="qa-item qa-item--open">
+          <dt>Q: <em>(slot left open)</em></dt>
+          <dd>A: Fill from the floor — guest complaints, wrong dish sent out, an item is out of stock, system errors, printer jams. Don’t invent these in advance.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="content-block content-block--case-key">
+      <h2>4. Rules &amp; reminders</h2>
+      <ul>
+        <li>Arrive on time for every shift</li>
+        <li>Neat uniform and hair; closed-toe shoes required</li>
+        <li>Keep the work area clean; take care of shop equipment</li>
+        <li>Wash hands thoroughly; never touch food directly with bare hands</li>
+        <li>Do not share menu photos or internal pricing outside the shop</li>
+        <li>Do not disclose the shop’s revenue or sales figures externally</li>
+      </ul>
+    </section>
+
+    <section class="content-block content-block--case-plain">
+      <h2>5. Quick glossary</h2>
+      <p>For anyone new to the terms used in the shop.</p>
+      <div class="table-scroll">
+      <table class="program-table">
+        <thead>
+          <tr>
+            <th>Term</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>POS system</td>
+            <td>Point-of-sale software used to log orders, process payments, and manage bills</td>
+          </tr>
+          <tr>
+            <td>Order</td>
+            <td>Recording what the guest wants in the system so it can be sent to the kitchen</td>
+          </tr>
+          <tr>
+            <td>Provisional bill</td>
+            <td>A summary of the total amount due, shown to the guest before final payment</td>
+          </tr>
+          <tr>
+            <td>Receipt</td>
+            <td>The printed slip issued after payment is completed</td>
+          </tr>
+          <tr>
+            <td>Delivery app</td>
+            <td>Third-party ordering platforms such as GrabFood or ShopeeFood</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="content-block content-block--case-plain">
+      <h2>What I’d do next</h2>
+      <p>If I were still there for a pilot: sit with one new hire on their first two shifts. Watch where they still look around for a person instead of the page. Add those moments to section 3. Then see whether the float still balances without a senior standing over the count.</p>
+      <p class="case-tags text-muted">Needs analysis · Process documentation · Sequencing · Quick-reference design · Onboarding for high-turnover, in-person roles</p>
+    </section>
+
+    <p class="center-cta">
+      <a href="../work.html" class="btn btn-outline" data-i18n="cashier.allWork">← All work</a>
+    </p>
+  </main>
+
+  <footer class="foot wrap">
+    <span><span data-i18n="footer.copy">© 2026 Le Kieu Duyen · Learning &amp; Talent Operations</span><span class="footer-tagline" data-i18n="footer.tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
+    <span class="foot-links">
+      <a href="mailto:kieuduyen.contact@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
+    </span>
+  </footer>
+  <script src="../js/i18n.js?v=6"></script>
+  <script src="../js/motion.js?v=4"></script>
+  <script src="../js/nav.js"></script>
+</body>
+</html>
