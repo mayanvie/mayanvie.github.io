@@ -478,7 +478,7 @@
       el.hidden = el.getAttribute('data-i18n-block') !== lang;
     });
 
-    var cvFile = lang === 'vi' ? 'LeKieuDuyen_CV_LnD.pdf' : 'resume.pdf';
+    var cvFile = lang === 'vi' ? 'LeKieuDuyen_CV_LnD.pdf' : 'LeKieuDuyen_CV_LnD_EN.pdf';
     document.querySelectorAll('[data-cv-link]').forEach(function (el) {
       el.setAttribute('href', el.getAttribute('data-cv-link') + cvFile);
     });
