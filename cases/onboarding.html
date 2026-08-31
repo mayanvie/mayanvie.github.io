@@ -6,9 +6,10 @@
   <title>Onboarding Program Case — Le Kieu Duyen</title>
   <meta name="description" content="7-day onboarding program for Art Experience Guides — learner analysis, modules, and assessment design.">
   <meta name="theme-color" content="#F5F0E8">
-  <link rel="stylesheet" href="../css/style.css">
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('has-motion');</script>
+  <link rel="stylesheet" href="../css/style.css?v=4">
 </head>
-<body>
+<body data-page="case">
   <header class="top">
     <div class="wrap">
       <a href="../index.html" class="brand" aria-label="Le Kieu Duyen — home">
@@ -18,32 +19,32 @@
           <span class="brand-nick">mayanvie</span>
         </span>
       </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-attr="aria-label:nav.menuOpen">
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
       </button>
       <nav class="nav" id="site-nav">
-        <a href="../index.html">Home</a>
-        <a href="../work.html" class="on">Work</a>
-        <a href="../about.html">About</a>
-        <a href="../cv/resume.pdf" class="pill" download>Download CV</a>
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="../work.html" class="on" data-i18n="nav.work">Work</a>
+        <a href="../about.html" data-i18n="nav.about">About</a>
+        <a href="../cv/resume.pdf" class="pill" download data-i18n="nav.cv">Download CV</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap page case-page">
-    <p class="back-link"><a href="../work.html">← Back to work</a></p>
-    <span class="tag tag--c1">case study</span>
-    <h1>Art Experience Guide: onboarding program</h1>
+    <p class="back-link"><a href="../work.html" data-i18n="case.back">← Back to work</a></p>
+    <span class="tag tag--c1" data-i18n="case.tag">case study</span>
+    <h1 data-i18n="case.title">Art Experience Guide: onboarding program</h1>
     <div class="case-meta">
-      <span class="meta-tag">Onboarding design</span>
-      <span class="meta-tag">7 days · 26 hours</span>
-      <span class="tag tag--c3">Reconstructed portfolio piece</span>
+      <span class="meta-tag" data-i18n="case.m1">Onboarding design</span>
+      <span class="meta-tag" data-i18n="case.m2">7 days · 26 hours</span>
+      <span class="tag tag--c3" data-i18n="case.m3">Reconstructed portfolio piece</span>
     </div>
-    <p class="lead"><strong>Role:</strong> Learning &amp; onboarding design (from my time as an Art Experience Guide)<br>
+    <p class="lead" data-i18n-html="case.lead"><strong>Role:</strong> Learning &amp; onboarding design (from my time as an Art Experience Guide)<br>
     <strong>Organization:</strong> A creative exhibition (name kept confidential)</p>
-    <aside class="case-note">
+    <aside class="case-note" data-i18n-html="case.note">
       <strong>Portfolio note:</strong> This program is <strong>reconstructed</strong> from gaps I saw on the job, not from a post-launch report. I don't have rollout metrics yet. The design logic is real. The numbers would come after a pilot.
     </aside>
 
@@ -64,8 +65,8 @@
             </svg>
           </span>
         <div class="summary-box__body">
-          <strong>Learners</strong>
-          <p>New Art Experience Guides, usually 18–30, often students or career changers from arts, social sciences, or languages. They knew basic company info but not workflows, org structure, exhibition content, or how to handle surprises.</p>
+          <strong data-i18n="case.sum1.t">Learners</strong>
+          <p data-i18n="case.sum1.p">New Art Experience Guides, usually 18–30, often students or career changers from arts, social sciences, or languages. They knew basic company info but not workflows, org structure, exhibition content, or how to handle surprises.</p>
         </div>
       </div>
       <div class="summary-box summary-box--doodle">
@@ -84,8 +85,8 @@
             </svg>
           </span>
         <div class="summary-box__body">
-          <strong>Problem</strong>
-          <p>New hires learned from whoever was available that day, so quality shifted every hiring round. The thing that broke people in week one was detailed zone checklists. Too much to hold in your head while everything else is new.</p>
+          <strong data-i18n="case.sum2.t">Problem</strong>
+          <p data-i18n="case.sum2.p">New hires learned from whoever was available that day, so quality shifted every hiring round. The thing that broke people in week one was detailed zone checklists. Too much to hold in your head while everything else is new.</p>
         </div>
       </div>
       <div class="summary-box summary-box--doodle">
@@ -103,8 +104,8 @@
             </svg>
           </span>
         <div class="summary-box__body">
-          <strong>What I did</strong>
-          <p>Designed a 7-day program (5 modules + practice + assessment), including learner analysis, learning objectives, program outline, and one fully written module (Customer Service) with activities and pass criteria.</p>
+          <strong data-i18n="case.sum3.t">What I did</strong>
+          <p data-i18n="case.sum3.p">Designed a 7-day program (5 modules + practice + assessment), including learner analysis, learning objectives, program outline, and one fully written module (Customer Service) with activities and pass criteria.</p>
         </div>
       </div>
       <div class="summary-box summary-box--doodle">
@@ -121,8 +122,8 @@
             </svg>
           </span>
         <div class="summary-box__body">
-          <strong>Design goal</strong>
-          <p>After the first week, a guide should set up zones on time and guide full tours alone. They should answer basic exhibition questions, contact the right teams, and handle common guest situations in English or with support tools.</p>
+          <strong data-i18n="case.sum4.t">Design goal</strong>
+          <p data-i18n="case.sum4.p">After the first week, a guide should set up zones on time and guide full tours alone. They should answer basic exhibition questions, contact the right teams, and handle common guest situations in English or with support tools.</p>
         </div>
       </div>
     </div>
@@ -261,18 +262,20 @@
     </section>
 
     <p class="center-cta">
-      <a href="../work.html" class="btn btn-outline">← All work</a>
+      <a href="../work.html" class="btn btn-outline" data-i18n="case.allWork">← All work</a>
     </p>
   </main>
 
   <footer class="foot wrap">
-    <span>© 2026 Le Kieu Duyen · Learning &amp; Talent Operations<span class="footer-tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
+    <span><span data-i18n="footer.copy">© 2026 Le Kieu Duyen · Learning &amp; Talent Operations</span><span class="footer-tagline" data-i18n="footer.tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
     <span class="foot-links">
       <a href="mailto:kieuduyen.contact@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
     </span>
   </footer>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/motion.js?v=4"></script>
   <script src="../js/nav.js"></script>
 </body>
 </html>

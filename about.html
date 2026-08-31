@@ -6,9 +6,10 @@
   <title>About — Le Kieu Duyen</title>
   <meta name="description" content="About Le Kieu Duyen — Learning & Talent Operations.">
   <meta name="theme-color" content="#F5F0E8">
-  <link rel="stylesheet" href="css/style.css">
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('has-motion');</script>
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
-<body>
+<body data-page="about">
   <header class="top">
     <div class="wrap">
       <a href="index.html" class="brand" aria-label="Le Kieu Duyen — home">
@@ -18,16 +19,16 @@
           <span class="brand-nick">mayanvie</span>
         </span>
       </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-attr="aria-label:nav.menuOpen">
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
       </button>
       <nav class="nav" id="site-nav">
-        <a href="index.html">Home</a>
-        <a href="work.html">Work</a>
-        <a href="about.html" class="on">About</a>
-        <a href="cv/resume.pdf" class="pill" download>Download CV</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="work.html" data-i18n="nav.work">Work</a>
+        <a href="about.html" class="on" data-i18n="nav.about">About</a>
+        <a href="cv/resume.pdf" class="pill" download data-i18n="nav.cv">Download CV</a>
       </nav>
     </div>
   </header>
@@ -35,9 +36,9 @@
   <main class="wrap page">
     <header class="about-intro">
       <div>
-        <h1>About</h1>
-        <p class="hero-role">Learning &amp; Talent Operations · Ho Chi Minh City</p>
-        <p class="lead">I'm moving into Learning &amp; Talent Operations because I keep seeing the same pattern. People get stuck when the path isn't clear. Sometimes asking for help feels worse than staying quiet. I want to work on that part of the job, not only the slides.</p>
+        <h1 data-i18n="about.title">About</h1>
+        <p class="hero-role" data-i18n="about.role">Learning &amp; Talent Operations · Ho Chi Minh City</p>
+        <p class="lead" data-i18n="about.lead">I'm moving into Learning &amp; Talent Operations because I keep seeing the same pattern. People get stuck when the path isn't clear. Sometimes asking for help feels worse than staying quiet. I want to work on that part of the job, not only the slides.</p>
       </div>
       <figure class="portrait profile-photo profile-photo--about">
         <img src="images/profile.png?v=2" alt="Le Kieu Duyen — portrait" width="220" height="220" loading="lazy" decoding="async">
@@ -45,99 +46,101 @@
     </header>
 
     <section class="about-section">
-      <h2>My path (short version)</h2>
+      <h2 data-i18n="about.path">My path (short version)</h2>
       <div class="about-prose">
-        <p>I studied <strong>Cultural Studies</strong> at USSH (Ho Chi Minh City). That trained me to notice context. Who someone is. What actually matters to them. Why a reasonable instruction still fails in real life.</p>
-        <p>After that: <strong>content and marketing at a creative startup</strong> (many hats), <strong>guiding visitors at art exhibitions</strong>, <strong>private tutoring</strong>, and <strong>assisting at an English center</strong>. Different jobs, same pattern underneath. Someone is new, overloaded, or afraid of getting it wrong. I try to make the next step obvious.</p>
-        <p>Now I'm aiming for <strong>Learning Operations</strong>, <strong>Talent &amp; Learning Operations</strong>, and <strong>learning experience design</strong> in edtech, creative teams, or corporate L&amp;D. That's the direction I'm building toward.</p>
+        <p data-i18n-html="about.path1">I studied <strong>Cultural Studies</strong> at USSH (Ho Chi Minh City). That trained me to notice context. Who someone is. What actually matters to them. Why a reasonable instruction still fails in real life.</p>
+        <p data-i18n-html="about.path2">After that: <strong>content and marketing at a creative startup</strong> (many hats), <strong>guiding visitors at art exhibitions</strong>, <strong>private tutoring</strong>, and <strong>assisting at an English center</strong>. Different jobs, same pattern underneath. Someone is new, overloaded, or afraid of getting it wrong. I try to make the next step obvious.</p>
+        <p data-i18n-html="about.path3">Now I'm aiming for <strong>Learning Operations</strong>, <strong>Talent &amp; Learning Operations</strong>, and <strong>learning experience design</strong> in edtech, creative teams, or corporate L&amp;D. That's the direction I'm building toward.</p>
       </div>
     </section>
 
     <section class="about-section">
-      <h2>Career timeline</h2>
-      <p class="section-intro">Most recent first. The through-line underneath the different roles.</p>
+      <h2 data-i18n="about.timeline">Career timeline</h2>
+      <p class="section-intro" data-i18n="about.timelineIntro">Most recent first. The through-line underneath the different roles.</p>
 
       <ol class="path-timeline" aria-label="Career timeline">
         <li class="path-timeline__item">
           <time class="path-timeline__when" datetime="2026">2026</time>
           <div class="path-timeline__track" aria-hidden="true"><span class="path-timeline__dot"></span></div>
           <div class="path-timeline__body">
-            <p class="path-timeline__title">Now: Learning &amp; Talent Operations focus</p>
-            <p class="path-timeline__meta">Portfolio, Substack lab, targeting L&amp;D / learning ops roles in Vietnam</p>
+            <p class="path-timeline__title" data-i18n="about.t1.title">Now: Learning &amp; Talent Operations focus</p>
+            <p class="path-timeline__meta" data-i18n="about.t1.meta">Portfolio, Substack lab, targeting L&amp;D / learning ops roles in Vietnam</p>
           </div>
         </li>
         <li class="path-timeline__item">
           <time class="path-timeline__when" datetime="2025-06">Jun 2025 – Dec 2025</time>
           <div class="path-timeline__track" aria-hidden="true"><span class="path-timeline__dot"></span></div>
           <div class="path-timeline__body">
-            <p class="path-timeline__title">TOA Exhibition, Art Experience Guide</p>
-            <p class="path-timeline__meta">Live facilitation (5–50 guests), guide training, 7-day onboarding program</p>
+            <p class="path-timeline__title" data-i18n="about.t2.title">TOA Exhibition, Art Experience Guide</p>
+            <p class="path-timeline__meta" data-i18n="about.t2.meta">Live facilitation (5–50 guests), guide training, 7-day onboarding program</p>
           </div>
         </li>
         <li class="path-timeline__item">
           <time class="path-timeline__when" datetime="2022">2022 – Present</time>
           <div class="path-timeline__track" aria-hidden="true"><span class="path-timeline__dot"></span></div>
           <div class="path-timeline__body">
-            <p class="path-timeline__title">MAC English &amp; independent tutoring</p>
-            <p class="path-timeline__meta">Progress tracking (~20 learners/class), 1-on-1 lesson plans (3 months–3 years)</p>
+            <p class="path-timeline__title" data-i18n="about.t3.title">MAC English &amp; independent tutoring</p>
+            <p class="path-timeline__meta" data-i18n="about.t3.meta">Progress tracking (~20 learners/class), 1-on-1 lesson plans (3 months–3 years)</p>
           </div>
         </li>
         <li class="path-timeline__item">
           <time class="path-timeline__when" datetime="2023-10">Oct 2023 – Jan 2025</time>
           <div class="path-timeline__track" aria-hidden="true"><span class="path-timeline__dot"></span></div>
           <div class="path-timeline__body">
-            <p class="path-timeline__title">Mamoon Vietnam, Content &amp; Internal Training Specialist</p>
-            <p class="path-timeline__meta">Onboarding SOPs, workshop logistics, Asana, Notion, Canva, KPI trackers</p>
+            <p class="path-timeline__title" data-i18n="about.t4.title">Mamoon Vietnam, Content &amp; Internal Training Specialist</p>
+            <p class="path-timeline__meta" data-i18n="about.t4.meta">Onboarding SOPs, workshop logistics, Asana, Notion, Canva, KPI trackers</p>
           </div>
         </li>
         <li class="path-timeline__item">
           <time class="path-timeline__when" datetime="2018">2018 – 2022</time>
           <div class="path-timeline__track" aria-hidden="true"><span class="path-timeline__dot"></span></div>
           <div class="path-timeline__body">
-            <p class="path-timeline__title">Bachelor of Cultural Studies, USSH (VNU-HCMC)</p>
-            <p class="path-timeline__meta">Culture, communication and context. Foundation for how I read learners and teams.</p>
+            <p class="path-timeline__title" data-i18n="about.t5.title">Bachelor of Cultural Studies, USSH (VNU-HCMC)</p>
+            <p class="path-timeline__meta" data-i18n="about.t5.meta">Culture, communication and context. Foundation for how I read learners and teams.</p>
           </div>
         </li>
       </ol>
     </section>
 
     <section class="about-section">
-      <h2>What I bring</h2>
-      <p class="section-intro">What I lean on across tutoring, guiding, and program work.</p>
+      <h2 data-i18n="about.bring">What I bring</h2>
+      <p class="section-intro" data-i18n="about.bringIntro">What I lean on across tutoring, guiding, and program work.</p>
       <div class="about-bring-grid notes">
         <article class="about-card note--1">
-          <span class="tag tag--c1">communication</span>
-          <h3>Storytelling &amp; layout</h3>
-          <p>I care whether a doc feels approachable enough to open. Having the information in the file somewhere isn't enough.</p>
+          <span class="tag tag--c1" data-i18n="home.b1.tag">communication</span>
+          <h3 data-i18n="home.b1.title">Storytelling &amp; layout</h3>
+          <p data-i18n="home.b1.desc">I care whether a doc feels approachable enough to open. Having the information in the file somewhere isn't enough.</p>
         </article>
         <article class="about-card note--2">
-          <span class="tag tag--c2">learning science</span>
-          <h3>Plain-language writing</h3>
-          <p>On <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a> I write about memory, motivation, and what blocks adults from learning. Often the language itself isn't the problem.</p>
+          <span class="tag tag--c2" data-i18n="home.b2.tag">learning science</span>
+          <h3 data-i18n="home.b2.title">Plain-language writing</h3>
+          <p data-i18n-html="about.b2.desc">On <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a> I write about memory, motivation, and what blocks adults from learning. Often the language itself isn't the problem.</p>
         </article>
         <article class="about-card note--3">
-          <span class="tag tag--c3">operations</span>
-          <h3>Systems that stick</h3>
-          <p>Modules, checklists, trackers, follow-up. So a program can run again without reinventing everything each time.</p>
+          <span class="tag tag--c3" data-i18n="home.b3.tag">operations</span>
+          <h3 data-i18n="home.b3.title">Systems that stick</h3>
+          <p data-i18n="home.b3.desc">Modules, checklists, trackers, follow-up. So a program can run again without reinventing everything each time.</p>
         </article>
       </div>
     </section>
 
     <p class="center-cta">
-      <a href="work.html" class="btn btn-cta btn-arrow">See my work</a>
-      <a href="mailto:kieuduyen.contact@gmail.com" class="btn btn-outline">Email me</a>
-      <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener" class="chip">LinkedIn</a>
+      <a href="work.html" class="btn btn-cta btn-arrow" data-i18n="btn.seeWork">See my work</a>
+      <a href="mailto:kieuduyen.contact@gmail.com" class="btn btn-outline" data-i18n="btn.email">Email me</a>
+      <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener" class="chip" data-i18n="btn.linkedin">LinkedIn</a>
     </p>
   </main>
 
   <footer class="foot wrap">
-    <span>© 2026 Le Kieu Duyen · Learning &amp; Talent Operations<span class="footer-tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
+    <span><span data-i18n="footer.copy">© 2026 Le Kieu Duyen · Learning &amp; Talent Operations</span><span class="footer-tagline" data-i18n="footer.tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
     <span class="foot-links">
       <a href="mailto:kieuduyen.contact@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
     </span>
   </footer>
+  <script src="js/i18n.js"></script>
+  <script src="js/motion.js?v=4"></script>
   <script src="js/nav.js"></script>
 </body>
 </html>

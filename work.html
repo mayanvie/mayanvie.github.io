@@ -6,9 +6,10 @@
   <title>Work — Le Kieu Duyen</title>
   <meta name="description" content="Case studies in learning design and operations.">
   <meta name="theme-color" content="#F5F0E8">
-  <link rel="stylesheet" href="css/style.css">
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('has-motion');</script>
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
-<body>
+<body data-page="work">
   <header class="top">
     <div class="wrap">
       <a href="index.html" class="brand" aria-label="Le Kieu Duyen — home">
@@ -18,54 +19,57 @@
           <span class="brand-nick">mayanvie</span>
         </span>
       </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-attr="aria-label:nav.menuOpen">
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
       </button>
       <nav class="nav" id="site-nav">
-        <a href="index.html">Home</a>
-        <a href="work.html" class="on">Work</a>
-        <a href="about.html">About</a>
-        <a href="cv/resume.pdf" class="pill" download>Download CV</a>
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="work.html" class="on" data-i18n="nav.work">Work</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="cv/resume.pdf" class="pill" download data-i18n="nav.cv">Download CV</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap page">
     <header class="page-head">
-      <span class="sec-eyebrow">Portfolio</span>
-      <h1>Work</h1>
-      <p class="lead" id="approach">Day one is as much about nerves and logistics as it is about information. I try to write things people will actually open. I build in practice before the stakes go up. That might be a guide's first week. It might be a program someone has to run again next month.</p>
+      <span class="sec-eyebrow" data-i18n="work.eyebrow">Portfolio</span>
+      <h1 data-i18n="work.title">Work</h1>
+      <p class="lead" id="approach" data-i18n="work.lead">Day one is as much about nerves and logistics as it is about information. I try to write things people will actually open. I build in practice before the stakes go up. That might be a guide's first week. It might be a program someone has to run again next month.</p>
     </header>
 
     <div class="work-gallery" aria-label="Work samples">
       <section class="work-gallery__block work-gallery__block--listen" id="act-1">
         <header class="work-gallery__head">
-          <span class="tag tag--c1 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> Note 01</span>
-          <h2>I listen</h2>
-          <p>Tutoring floors and exhibition walk-throughs. I pay attention to when someone is stuck before any syllabus exists.</p>
+          <span class="tag tag--c1 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> <span data-i18n="tag.note01">Note 01</span></span>
+          <h2 data-i18n="work.l1.title">I listen</h2>
+          <p data-i18n="work.l1.desc">Tutoring floors and exhibition walk-throughs. I pay attention to when someone is stuck before any syllabus exists.</p>
         </header>
         <div class="work-gallery__layout">
+          <article class="project-card">
+            <a class="project-card__link" href="cases/sales-communication.html">
+              <div class="project-card__body">
+                <span class="project-card__tag" data-i18n="home.p2.tag">Case study</span>
+                <h3 data-i18n="home.p2.title">Supporting a sales team&apos;s communication skills</h3>
+                <p data-i18n="home.p2.desc">Simulated case: belief gap before skill gap. Needs scoping, workshop outline, video brief, and coordination plan.</p>
+                <span class="project-card__cta" data-i18n="home.p2.cta">Read case study →</span>
+              </div>
+            </a>
+          </article>
           <article class="project-card project-card--soon">
             <div class="project-card__body">
-              <span class="project-card__tag project-card__tag--soon">Coming soon</span>
-              <h3>Facilitation: tutoring &amp; exhibition guiding</h3>
-              <p>Short write-ups on getting stuck quietly, before any program doc exists.</p>
+              <span class="project-card__tag project-card__tag--soon" data-i18n="tag.comingSoon">Coming soon</span>
+              <h3 data-i18n="work.w1b.title">Exhibition walk-through: what visitors don't ask aloud</h3>
+              <p data-i18n="work.w1b.desc">Field notes from guiding small groups through art spaces. Hesitation, curiosity, and the questions people don't say out loud.</p>
             </div>
           </article>
           <article class="project-card project-card--soon">
             <div class="project-card__body">
-              <span class="project-card__tag project-card__tag--soon">Coming soon</span>
-              <h3>Exhibition walk-through: what visitors don't ask aloud</h3>
-              <p>Field notes from guiding small groups through art spaces. Hesitation, curiosity, and the questions people don't say out loud.</p>
-            </div>
-          </article>
-          <article class="project-card project-card--soon">
-            <div class="project-card__body">
-              <span class="project-card__tag project-card__tag--soon">Coming soon</span>
-              <h3>Tutoring floor: when learners stall without saying so</h3>
-              <p>Signals I watch for in one-on-one sessions before reaching for a syllabus or a fix.</p>
+              <span class="project-card__tag project-card__tag--soon" data-i18n="tag.comingSoon">Coming soon</span>
+              <h3 data-i18n="work.w1c.title">Tutoring floor: when learners stall without saying so</h3>
+              <p data-i18n="work.w1c.desc">Signals I watch for in one-on-one sessions before reaching for a syllabus or a fix.</p>
             </div>
           </article>
         </div>
@@ -73,36 +77,36 @@
 
       <section class="work-gallery__block work-gallery__block--structure" id="act-2">
         <header class="work-gallery__head">
-          <span class="tag tag--c2 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> Note 02</span>
-          <h2>I structure</h2>
-          <p>Outlines, session rhythm, and artifacts people can open on day one on their own.</p>
+          <span class="tag tag--c2 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> <span data-i18n="tag.note02">Note 02</span></span>
+          <h2 data-i18n="work.l2.title">I structure</h2>
+          <p data-i18n="work.l2.desc">Outlines, session rhythm, and artifacts people can open on day one on their own.</p>
         </header>
         <div class="work-gallery__layout">
           <article class="project-card project-card--lead" id="act-2-card">
             <a class="project-card__link" href="cases/onboarding.html">
               <div class="project-card__body">
-                <span class="project-card__tag">Case study</span>
-                <h3>Art Experience Guide: onboarding program</h3>
-                <p>Learner analysis, program outline, one module in full. Customer Service with activities and pass criteria.</p>
-                <span class="project-card__cta">Open case study →</span>
+                <span class="project-card__tag" data-i18n="home.p1.tag">Case study</span>
+                <h3 data-i18n="home.p1.title">Art Experience Guide: onboarding program</h3>
+                <p data-i18n="work.caseCard.desc">Learner analysis, program outline, one module in full. Customer Service with activities and pass criteria.</p>
+                <span class="project-card__cta" data-i18n="work.caseCard.cta">Open case study →</span>
               </div>
             </a>
           </article>
           <article class="project-card" id="act-2-plan">
             <a class="project-card__link" href="https://docs.google.com/spreadsheets/d/1gKSDSkkWLCBLVC9BgTMOlLikZB-ykzWHk9vSoKJwoo4/view?usp=sharing" target="_blank" rel="noopener">
               <div class="project-card__body">
-                <span class="project-card__tag">Sample · study plan</span>
-                <h3>Learner content plan &amp; timeline</h3>
-                <p>Topics, sequence, and weekly rhythm between sessions. Google Sheets, no learner PII.</p>
-                <span class="project-card__cta project-card__cta--outline">Open sample plan →</span>
+                <span class="project-card__tag" data-i18n="work.p2.tag">Sample · study plan</span>
+                <h3 data-i18n="home.p3.title">Learner content plan &amp; timeline</h3>
+                <p data-i18n="home.p3.desc">Topics, sequence, and weekly rhythm between sessions. Google Sheets, no learner PII.</p>
+                <span class="project-card__cta project-card__cta--outline" data-i18n="work.p2.cta">Open sample plan →</span>
               </div>
             </a>
           </article>
           <article class="project-card project-card--soon">
             <div class="project-card__body">
-              <span class="project-card__tag project-card__tag--soon">In progress</span>
-              <h3>More artifacts landing soon</h3>
-              <p>Vocabulary tracker samples (HSK sheets) and screenshots from onboarding materials.</p>
+              <span class="project-card__tag project-card__tag--soon" data-i18n="tag.inProgress">In progress</span>
+              <h3 data-i18n="work.p3.title">More artifacts landing soon</h3>
+              <p data-i18n="work.p3.desc">Vocabulary tracker samples (HSK sheets) and screenshots from onboarding materials.</p>
             </div>
           </article>
         </div>
@@ -110,43 +114,43 @@
 
       <section class="work-gallery__block work-gallery__block--learn" id="act-3">
         <header class="work-gallery__head">
-          <span class="tag tag--c3 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> Note 03</span>
-          <h2>I keep learning</h2>
-          <p>Essays on memory, motivation, and what blocks adults. I publish them as I test ideas in my own study.</p>
+          <span class="tag tag--c3 note-lab"><span class="note-lab__star" aria-hidden="true">★</span> <span data-i18n="tag.note03">Note 03</span></span>
+          <h2 data-i18n="work.l3.title">I keep learning</h2>
+          <p data-i18n="work.l3.desc">Essays on memory, motivation, and what blocks adults. I publish them as I test ideas in my own study.</p>
         </header>
         <div class="work-gallery__layout">
           <article class="project-card" id="essay-schema">
             <a class="project-card__link" href="essays/schema.html">
               <div class="project-card__body">
-                <span class="project-card__tag">Essay · Jun 2025</span>
-                <h3>Your brain doesn't start at zero: it starts with a schema</h3>
-                <p>Schemas, memory, and why starting from zero never quite feels true.</p>
-                <span class="project-card__cta project-card__cta--outline">Read here →</span>
+                <span class="project-card__tag" data-i18n="work.essay.tag">Essay · Jun 2025</span>
+                <h3 data-i18n="work.essay.title">Your brain doesn't start at zero: it starts with a schema</h3>
+                <p data-i18n="work.essay.desc">Schemas, memory, and why starting from zero never quite feels true.</p>
+                <span class="project-card__cta project-card__cta--outline" data-i18n="work.essay.cta">Read here →</span>
               </div>
             </a>
           </article>
           <article class="project-card project-card--soon">
             <div class="project-card__body">
-              <span class="project-card__tag project-card__tag--soon">Coming soon</span>
-              <h3>Input vs. output: why consuming alone rarely builds skill</h3>
-                <p>On the gap between watching, reading, and actually rehearsing. From my own language study.</p>
+              <span class="project-card__tag project-card__tag--soon" data-i18n="tag.comingSoon">Coming soon</span>
+              <h3 data-i18n="work.e2.title">Input vs. output: why consuming alone rarely builds skill</h3>
+              <p data-i18n="work.e2.desc">On the gap between watching, reading, and actually rehearsing. From my own language study.</p>
             </div>
           </article>
           <article class="project-card project-card--soon">
             <div class="project-card__body">
-              <span class="project-card__tag project-card__tag--soon">Coming soon</span>
-              <h3>What blocks adults from learning</h3>
-                <p>Memory, motivation, and the friction that often isn't the subject itself. Notes as I test ideas in practice.</p>
+              <span class="project-card__tag project-card__tag--soon" data-i18n="tag.comingSoon">Coming soon</span>
+              <h3 data-i18n="work.e3.title">What blocks adults from learning</h3>
+              <p data-i18n="work.e3.desc">Memory, motivation, and the friction that often isn't the subject itself. Notes as I test ideas in practice.</p>
             </div>
           </article>
         </div>
-        <p class="work-gallery__foot">More on <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener"><em>One note at a time</em> →</a></p>
+        <p class="work-gallery__foot" data-i18n-html="work.foot">More on <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener"><em>One note at a time</em> →</a></p>
       </section>
     </div>
 
     <section class="sec">
-      <span class="sec-eyebrow">Toolkit</span>
-      <h2>Tools I use</h2>
+      <span class="sec-eyebrow" data-i18n="work.toolkit">Toolkit</span>
+      <h2 data-i18n="work.tools">Tools I use</h2>
       <div class="skill-tags">
         <span class="meta-tag">Google Sheets</span>
         <span class="meta-tag">Notion</span>
@@ -154,26 +158,26 @@
         <span class="meta-tag">Canva</span>
         <span class="meta-tag">Google Docs</span>
         <span class="meta-tag">Confluence-style docs</span>
-        <span class="tag tag--c3">Comfortable learning new systems quickly</span>
+        <span class="tag tag--c3" data-i18n="work.toolsTag">Comfortable learning new systems quickly</span>
       </div>
-      <p class="text-muted" style="margin-top:1rem;">I pick tools for findability and handoff. A shiny new app doesn't help much if someone else can't find the same file next month.</p>
+      <p class="text-muted" style="margin-top:1rem;" data-i18n="work.toolsNote">I pick tools for findability and handoff. A shiny new app doesn't help much if someone else can't find the same file next month.</p>
     </section>
 
     <section class="lms-section">
-      <span class="sec-eyebrow">Systems</span>
-      <h2>LMS &amp; corporate systems</h2>
-      <p>I haven't run an enterprise LMS in production yet. I do think like an ops teammate. Clear pathways, enrollments, completion signals. An experience that answers “what do I do today?” without a scavenger hunt.</p>
-      <p>I'm ready to learn tools like iLearn (or similar) quickly. The logic is familiar. Sequenced content, practice tasks, pass rules. The interface is what I'd need to learn.</p>
+      <span class="sec-eyebrow" data-i18n="work.systems">Systems</span>
+      <h2 data-i18n="work.lms">LMS &amp; corporate systems</h2>
+      <p data-i18n="work.lms1">I haven't run an enterprise LMS in production yet. I do think like an ops teammate. Clear pathways, enrollments, completion signals. An experience that answers “what do I do today?” without a scavenger hunt.</p>
+      <p data-i18n="work.lms2">I'm ready to learn tools like iLearn (or similar) quickly. The logic is familiar. Sequenced content, practice tasks, pass rules. The interface is what I'd need to learn.</p>
     </section>
 
     <p class="center-cta">
-      <a href="cv/resume.pdf" class="btn btn-cta btn-arrow" download>Download CV</a>
-      <a href="mailto:kieuduyen.contact@gmail.com" class="btn btn-outline">Get in touch</a>
+      <a href="cv/resume.pdf" class="btn btn-cta btn-arrow" download data-i18n="btn.cv">Download CV</a>
+      <a href="mailto:kieuduyen.contact@gmail.com" class="btn btn-outline" data-i18n="btn.contact">Get in touch</a>
     </p>
   </main>
 
   <footer class="foot wrap">
-    <span>© 2026 Le Kieu Duyen · Learning &amp; Talent Operations<span class="footer-tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
+    <span><span data-i18n="footer.copy">© 2026 Le Kieu Duyen · Learning &amp; Talent Operations</span><span class="footer-tagline" data-i18n="footer.tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
     <span class="foot-links">
       <a href="mailto:kieuduyen.contact@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener">LinkedIn</a>
@@ -181,6 +185,8 @@
     </span>
   </footer>
 
+  <script src="js/i18n.js"></script>
+  <script src="js/motion.js?v=4"></script>
   <script src="js/nav.js"></script>
 </body>
 </html>

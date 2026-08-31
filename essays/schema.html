@@ -6,9 +6,10 @@
   <title>Your brain doesn't start at zero — Le Kieu Duyen</title>
   <meta name="description" content="Essay on schemas, memory, and language learning — originally published Jun 2025.">
   <meta name="theme-color" content="#F5F0E8">
-  <link rel="stylesheet" href="../css/style.css">
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('has-motion');</script>
+  <link rel="stylesheet" href="../css/style.css?v=4">
 </head>
-<body>
+<body data-page="essay">
   <header class="top">
     <div class="wrap">
       <a href="../index.html" class="brand" aria-label="Le Kieu Duyen — home">
@@ -18,25 +19,26 @@
           <span class="brand-nick">mayanvie</span>
         </span>
       </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-attr="aria-label:nav.menuOpen">
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
         <span class="nav-toggle__bar" aria-hidden="true"></span>
       </button>
       <nav class="nav" id="site-nav">
-        <a href="../index.html">Home</a>
-        <a href="../work.html" class="on">Work</a>
-        <a href="../about.html">About</a>
-        <a href="../cv/resume.pdf" class="pill" download>Download CV</a>
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="../work.html" class="on" data-i18n="nav.work">Work</a>
+        <a href="../about.html" data-i18n="nav.about">About</a>
+        <a href="../cv/resume.pdf" class="pill" download data-i18n="nav.cv">Download CV</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap page essay-page">
-    <p class="back-link"><a href="../work.html#act-3">← Back to work</a></p>
-    <span class="tag tag--c3">Essay · Jun 2025</span>
-    <h1>Your brain doesn't start at zero — it starts with a schema</h1>
-    <p class="lead essay-page__sub">The brain doesn't like starting from zero — it starts with a "schema." An essay on language learning, especially the part about remembering vocabulary.</p>
+    <p class="back-link"><a href="../work.html#act-3" data-i18n="essay.back">← Back to work</a></p>
+    <span class="tag tag--c3" data-i18n="essay.tag">Essay · Jun 2025</span>
+    <h1 data-i18n="essay.title">Your brain doesn't start at zero — it starts with a schema</h1>
+    <p class="essay-lang-note" data-i18n="essay.enNote">This essay is in English (original on Substack).</p>
+    <p class="lead essay-page__sub" data-i18n="essay.sub">The brain doesn't like starting from zero — it starts with a "schema." An essay on language learning, especially the part about remembering vocabulary.</p>
 
     <article class="essay-prose">
       <p>A few days ago, while despairing over how slowly I was learning Chinese, I went on YouTube to see how the rest of the world studies — and maybe steal a trick or two.</p>
@@ -164,12 +166,14 @@
   </main>
 
   <footer class="foot wrap">
-    <span>© 2026 Le Kieu Duyen · Learning &amp; Talent Operations<span class="footer-tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
+    <span><span data-i18n="footer.copy">© 2026 Le Kieu Duyen · Learning &amp; Talent Operations</span><span class="footer-tagline" data-i18n="footer.tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
     <span class="foot-links">
       <a href="mailto:kieuduyen.contact@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener">LinkedIn</a>
     </span>
   </footer>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/motion.js?v=4"></script>
   <script src="../js/nav.js"></script>
 </body>
 </html>

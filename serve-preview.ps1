@@ -37,7 +37,8 @@ Write-Host "Portfolio preview is running" -ForegroundColor Green
 Write-Host "  On THIS laptop use:" -ForegroundColor Cyan
 Write-Host "    http://127.0.0.1:$Port/" -ForegroundColor White
 Write-Host "    http://localhost:$Port/" -ForegroundColor White
-  Write-Host "  Work (structure): http://127.0.0.1:$Port/work.html#act-2" -ForegroundColor Cyan
+  Write-Host "  Visual demo:       http://127.0.0.1:$Port/demo-visual.html" -ForegroundColor Cyan
+Write-Host "  Work (structure): http://127.0.0.1:$Port/work.html#act-2" -ForegroundColor Cyan
 Write-Host "  Mobile hub (QR):   http://127.0.0.1:$Port/mobile-preview.html" -ForegroundColor Cyan
 if ($lanIp) {
   Write-Host "  On phone (same Wi-Fi only):" -ForegroundColor Yellow

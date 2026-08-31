@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sales Team Communication Case — Le Kieu Duyen</title>
+  <meta name="description" content="Simulated case study: needs scoping, belief gap vs skill gap, and a 4-hour workshop for showroom staff — Beyond the Price Tag.">
+  <meta name="theme-color" content="#F5F0E8">
+  <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('has-motion');</script>
+  <link rel="stylesheet" href="../css/style.css?v=4">
+</head>
+<body data-page="case-sales">
+  <header class="top">
+    <div class="wrap">
+      <a href="../index.html" class="brand" aria-label="Le Kieu Duyen — home">
+        <span class="dot" aria-hidden="true">✦</span>
+        <span class="brand-text">
+          <span class="brand-name">Le Kieu Duyen</span>
+          <span class="brand-nick">mayanvie</span>
+        </span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-attr="aria-label:nav.menuOpen">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav">
+        <a href="../index.html" data-i18n="nav.home">Home</a>
+        <a href="../work.html" class="on" data-i18n="nav.work">Work</a>
+        <a href="../about.html" data-i18n="nav.about">About</a>
+        <a href="../cv/resume.pdf" class="pill" download data-i18n="nav.cv">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page case-page">
+    <p class="back-link"><a href="../work.html#act-1" data-i18n="sales.back">← Back to work</a></p>
+    <span class="tag tag--c1" data-i18n="sales.tag">case study</span>
+    <h1 data-i18n="sales.title">Supporting a sales team's communication skills</h1>
+    <div class="case-meta">
+      <span class="meta-tag" data-i18n="sales.m1">Needs analysis · Workshop design</span>
+      <span class="meta-tag" data-i18n="sales.m2">4 hours · 20 learners</span>
+      <span class="tag tag--c3" data-i18n="sales.m3">Simulated portfolio piece</span>
+    </div>
+    <p class="lead" data-i18n-html="sales.lead"><strong>Role:</strong> L&amp;D specialist (the only L&amp;D function at the time)<br>
+    <strong>Context:</strong> Fashion/beauty brand with e-commerce + a small showroom (simulated)</p>
+    <aside class="case-note" data-i18n-html="sales.note">
+      <strong>Portfolio note:</strong> This case is <strong>simulated</strong> — company, showroom, and conversations are constructed for the portfolio. The root cause (staff avoiding follow-up because it feels like pushing) comes from real observations across different work settings.
+    </aside>
+
+    <div class="summary-grid summary-grid--case mb-2">
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--learners" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="22" cy="14" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M14 28c1.5-4 5-6.5 8-6.5s6.5 2.5 8 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="44" cy="16" r="5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M36 30c1.2-3.5 4.5-5.5 8-5.5s6.8 2 8 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M26 38h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M30 42h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="48" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M55 11v1.5a1.2 1.2 0 0 0 1.2 1.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="56.2" cy="16.2" r="0.9" fill="currentColor"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="sales.sum1.t">Learners</strong>
+          <p data-i18n="sales.sum1.p">20 showroom staff for a fashion/beauty brand. They had product training and price-objection scripts, but in-store conversion lagged even though traffic was not bad.</p>
+        </div>
+      </div>
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--problem" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 12h42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 18h36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 24h40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 30h28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M48 8c6 4 8 10 6 16-1.5 5-6 9-11 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M52 38l3 4 3-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="sales.sum2.t">Problem</strong>
+          <p data-i18n="sales.sum2.p">Not just a confidence gap. Staff believed that explaining more when a customer said “it’s expensive” meant pushing product — so they knew the script and chose not to use it. A generic sales-skills workshop would miss that.</p>
+        </div>
+      </div>
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--did" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="10" width="22" height="14" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="8" y="28" width="22" height="14" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M13 17h10M13 21h7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M34 17h4l2 2 6-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M52 14l8 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="sales.sum3.t">What I did</strong>
+          <p data-i18n="sales.sum3.p">Scoped the need before agreeing to train. Proposed a 4-hour workshop, <em>Beyond the Price Tag</em>, plus a video brief, roleplay design, a job aid, and a 10-day coordination plan.</p>
+        </div>
+      </div>
+      <div class="summary-box summary-box--doodle">
+        <span class="summary-doodle summary-doodle--goal" aria-hidden="true">
+          <svg viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="58" cy="14" r="5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M55 14l2.5 2.5L63 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="36" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M32 30l6-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div class="summary-box__body">
+          <strong data-i18n="sales.sum4.t">Design goal</strong>
+          <p data-i18n="sales.sum4.p">Staff explain product value in their own words when price comes up — and can tell a pushy reply from one that helps the customer understand value.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="content-block content-block--case-key">
+      <h2>1. Situation &amp; my role</h2>
+      <p>Simulated context: a fashion/beauty brand sold on e-commerce platforms and added a small showroom so customers could see products in person before buying online. Showroom sales were below expectation. Traffic wasn’t the problem — people came in — but same-visit conversion was low.</p>
+      <p>The showroom team lead assumed staff “didn’t know how to close” and proposed a sales-skills training right away. I was the only person covering L&amp;D at the time. I was asked to look into the problem <em>before</em> agreeing to train. A generic session on “sales skills” sounds safe. It’s also easy to prescribe the wrong medicine.</p>
+    </section>
+
+    <section class="content-block content-block--case-plain">
+      <h2>2. Needs scoping</h2>
+      <p>The first brief with the team lead gave me a starting picture: everyone had been through product training and had a script for price objections. On the floor, though, they often went quiet for a few seconds, answered hesitantly, laughed it off, or left the customer to decide alone. People usually walked out. The team lead guessed low confidence, or that they weren’t used to real pressure yet.</p>
+      <p>Before concluding, I asked for short conversations (10–15 minutes) with two showroom staff. Not to evaluate them — to understand what those moments actually felt like.</p>
+      <p>One detail stood out. A staff member said they knew the script, but every time a customer said “it’s expensive” and they tried to explain further, it felt a bit <em>off</em>. They worried the customer would think they were pushing product. So they usually stayed quiet, or said something light and stopped — to keep things comfortable for both sides.</p>
+      <p>That reframed the gap. It wasn’t only a confidence gap (unfamiliar pressure). There was also a <strong>belief gap</strong>: staff implicitly believed “explaining more when they say it’s expensive = pushing = I shouldn’t do that.” They had the script. They chose not to use it. That’s a different gap from a skill gap, and a workshop that only drills how to talk wouldn’t touch it.</p>
+    </section>
+
+    <section class="content-block content-block--case-key">
+      <h2>3. Solution proposal</h2>
+      <p>A skills-only session — practicing what to say when a customer says it’s expensive — would not be enough. The issue wasn’t that staff didn’t know what to say. They didn’t believe saying more was the right thing to do. So the solution still needed training, but it had to start with the belief before moving into skill.</p>
+      <p>I proposed one session: <strong>Beyond the Price Tag</strong>. Start by helping staff look at their role again — from pushing a sale to helping the customer understand value — then move into price-objection practice through realistic roleplay.</p>
+      <p>Alongside the workshop, a small extra support: where possible, give staff more access to how the product is made, or to material information, so believing in the price isn’t only theoretical.</p>
+    </section>
+
+    <section class="content-block content-block--case-key">
+      <h2>4. Workshop outline: “Beyond the Price Tag”</h2>
+      <h3>Overview</h3>
+      <ul>
+        <li><strong>Audience:</strong> 20 showroom staff</li>
+        <li><strong>Duration:</strong> 4 hours</li>
+        <li><strong>Location:</strong> at the showroom, after opening hours</li>
+        <li><strong>Special role:</strong> the manager plays the customer in the roleplay</li>
+      </ul>
+      <h3>Learning objectives</h3>
+      <ul>
+        <li>Explain product value in their own words when a customer says it’s expensive — not only reread the script</li>
+        <li>Recognize the difference between a reply that pressures the customer and a reply that explains value</li>
+      </ul>
+      <h3>Part 1 — Reframe (90 min)</h3>
+      <ul>
+        <li>Open with a short video telling a real story about the product’s impact (brief in section 5)</li>
+        <li>Facilitator briefly introduces the core idea: pushing a sale vs. explaining value</li>
+        <li>Common situations and phrases — the group guesses which is which, then discusses</li>
+      </ul>
+      <h3>Part 2 — Roleplay practice (120 min)</h3>
+      <ul>
+        <li>Short Kahoot to review common price objections</li>
+        <li>5–6 roleplay cases: manager as the customer; staff who’ve already shown strong responses go first
+          <ul>
+            <li>I pick people who’ve done well — not at random, and not the weakest person in order to “fix” them. It helps the person practicing feel recognized, and it gives the room a workable example to copy.</li>
+          </ul>
+        </li>
+        <li>Debrief right after each case, before moving on — keep the insight fresh, so the next case repeats fewer of the same mistakes</li>
+        <li>Time left: staff bring real situations they’ve struggled with; the group brainstorms how to respond</li>
+      </ul>
+      <h3>Part 3 — Wrap-up (30 min)</h3>
+      <ul>
+        <li>No test. The session had just touched a real hesitation. A quiz right after would add pressure that works against the original goal.</li>
+        <li>A few light closing questions, for example:
+          <ul>
+            <li>What’s one thing you’ll try differently next time a customer says it’s expensive?</li>
+            <li>Which case felt most like something you’ve actually faced?</li>
+          </ul>
+        </li>
+        <li>After the session: send a job-aid link (sample responses for common price objections)</li>
+      </ul>
+    </section>
+
+    <section class="content-block content-block--case-plain">
+      <h2>5. Video brief: “Why This Price?”</h2>
+      <p><em>Brief for the video team / production partner — used to open the “Beyond the Price Tag” workshop.</em></p>
+      <h3>Video goal</h3>
+      <p>Help staff <em>feel</em> product value in a real way — not through theory or slides. After watching, they should feel they’ve seen what’s behind the product, feel some inspiration about what they’re selling, and understand the price better.</p>
+      <p><strong>Length:</strong> about 3 minutes<br>
+      <strong>Tone:</strong> slow, grounded, real. Avoid ad-style polish and over-staging. Natural footage and voice over a perfectly finished look.</p>
+      <h3>Content structure</h3>
+      <div class="table-scroll">
+      <table class="program-table">
+        <thead>
+          <tr>
+            <th>Segment</th>
+            <th>Content</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Open</td>
+            <td>A customer shakes their head at the price, then a quiet beat</td>
+            <td>Start with the problem staff face every day, so the video is clearly about their situation</td>
+          </tr>
+          <tr>
+            <td>Main</td>
+            <td>The people who make the product talk about their work, intercut with them working. Materials, why those choices, what they’re aiming for</td>
+            <td>Show that “expensive” is deliberate effort and choice — not a random number</td>
+          </tr>
+          <tr>
+            <td>Close</td>
+            <td>Another customer who has used the product and genuinely loves it — a short share</td>
+            <td>Close the emotional arc: skepticism at the start → understanding and satisfaction at the end</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <h3>Production notes</h3>
+      <p>Keep the makers’ voices natural. They don’t need to read a finished script. Pauses and stumbles are part of the authenticity this video needs. Avoid background music and editing that looks like a typical ad.</p>
+    </section>
+
+    <section class="content-block content-block--case-key">
+      <h2>6. Coordination plan</h2>
+      <h3>Timeline (10 days before the workshop)</h3>
+      <div class="table-scroll">
+      <table class="program-table">
+        <thead>
+          <tr>
+            <th>When</th>
+            <th>What needs to happen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Day 1–10</td>
+            <td>Finish the video: script → shoot → edit</td>
+          </tr>
+          <tr>
+            <td>Day 1–2</td>
+            <td>Slides / materials for Part 1, Kahoot questions</td>
+          </tr>
+          <tr>
+            <td>Day 1</td>
+            <td>Brief the showroom manager on the customer role; choose staff for the model cases</td>
+          </tr>
+          <tr>
+            <td>Day 9–10</td>
+            <td>Finalize the job aid</td>
+          </tr>
+          <tr>
+            <td>Day 10</td>
+            <td>Workshop runs</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Workstreams run in parallel, not strictly one after another. The video is the longest piece of work, so it sets the overall prep window. No separate dry-run block is needed.</p>
+
+      <h3>Stakeholders</h3>
+      <ul>
+        <li><strong>Showroom manager:</strong> plays the customer in roleplay — needs a brief on how hard the role should be</li>
+        <li><strong>20 showroom staff:</strong> learners — need advance notice of time and place</li>
+        <li><strong>Internal video team:</strong> shoots and edits from the brief in section 5</li>
+        <li><strong>Product makers:</strong> appear on camera — permission and shoot scheduling</li>
+        <li><strong>Production / factory manager:</strong> approves the video before it is used in training</li>
+        <li><strong>Finance:</strong> budget approval</li>
+      </ul>
+
+      <h3>Logistics checklist</h3>
+      <ul>
+        <li>Showroom space cleared for training</li>
+        <li>Projection and sound for the video</li>
+        <li>Laptop / phones for Kahoot</li>
+        <li>Job-aid link ready to send after the session</li>
+        <li>Water and light snacks for a 4-hour workshop</li>
+      </ul>
+
+      <h3>Tracking in Google Sheets</h3>
+      <p><strong>Sheet 1 — Task tracker</strong></p>
+      <div class="table-scroll">
+      <table class="program-table">
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Owner</th>
+            <th>Deadline</th>
+            <th>Status</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Video: script → shoot → edit</td>
+            <td>Video team + L&amp;D</td>
+            <td>Day 10</td>
+            <td></td>
+            <td>Longest lead; sets the prep window</td>
+          </tr>
+          <tr>
+            <td>Part 1 slides + Kahoot</td>
+            <td>L&amp;D</td>
+            <td>Day 2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Manager role brief + model-case staff</td>
+            <td>L&amp;D + showroom manager</td>
+            <td>Day 1</td>
+            <td></td>
+            <td>Brief difficulty of the customer role</td>
+          </tr>
+          <tr>
+            <td>Job aid</td>
+            <td>L&amp;D</td>
+            <td>Day 10</td>
+            <td></td>
+            <td>Send after the session</td>
+          </tr>
+          <tr>
+            <td>Budget approval</td>
+            <td>Finance</td>
+            <td>Day 1–2</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Video content approval</td>
+            <td>Production manager</td>
+            <td>Before Day 10</td>
+            <td></td>
+            <td>Must sign off before training use</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <p><strong>Sheet 2 — Attendance</strong></p>
+      <div class="table-scroll">
+      <table class="program-table">
+        <thead>
+          <tr>
+            <th>Staff name</th>
+            <th>Present</th>
+            <th>Joined a model case</th>
+            <th>Quick note after the session</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <section class="content-block content-block--case-plain">
+      <h2>7. Reflection &amp; limitations</h2>
+      <p>The company, the showroom, the team-lead brief, and the two staff conversations in this case are simulated. The root cause I landed on is not. Staff holding back from explaining more because it feels like pushing product is something I’ve seen repeat in different workplaces. This case builds a specific situation around that observation — not the other way around.</p>
+      <p>One choice I know is the safer, simpler one: replacing a factory visit with a video. Video is much easier to coordinate inside a simulated case. In a real project, I still think being on the floor where the product is made — seeing the work with your own eyes — would land deeper than any video, even if the logistics are heavier.</p>
+      <p>Wrap-up in this case is a few light questions. It doesn’t measure real effect. If this were live, I would look at conversion over a stretch of time <em>and</em> watch staff across several selling shifts — to see whether explaining value actually became more natural, or only felt good right after the workshop.</p>
+      <p class="case-tags text-muted">Needs analysis · Belief vs. skill gap · Workshop design · Video brief · Coordination · Facilitation</p>
+    </section>
+
+    <p class="center-cta">
+      <a href="../work.html" class="btn btn-outline" data-i18n="sales.allWork">← All work</a>
+    </p>
+  </main>
+
+  <footer class="foot wrap">
+    <span><span data-i18n="footer.copy">© 2026 Le Kieu Duyen · Learning &amp; Talent Operations</span><span class="footer-tagline" data-i18n="footer.tagline">Ho Chi Minh City · open to L&amp;D / learning ops roles in Vietnam</span></span>
+    <span class="foot-links">
+      <a href="mailto:kieuduyen.contact@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/lekieuduyen" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
+    </span>
+  </footer>
+  <script src="../js/i18n.js?v=5"></script>
+  <script src="../js/motion.js?v=4"></script>
+  <script src="../js/nav.js"></script>
+</body>
+</html>
