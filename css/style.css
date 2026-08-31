@@ -1353,14 +1353,16 @@ table.program-table th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform-origin: 50% 0;
+  transform-origin: top center;
   margin-top: -0.35rem;
   user-select: none;
+  will-change: transform;
+  animation: nametag-sway 3.6s ease-in-out infinite;
 }
 
 .nametag__cord {
   width: 2px;
-  height: 34px;
+  height: 44px;
   background: linear-gradient(
     180deg,
     color-mix(in srgb, var(--c1) 55%, var(--line)),
@@ -1417,16 +1419,10 @@ table.program-table th {
   background: #f4efe6;
 }
 
-html.has-motion .nametag {
-  animation: nametag-sway 5.2s ease-in-out infinite;
-}
-
 @keyframes nametag-sway {
-  0% { transform: rotate(-2.8deg); }
-  18% { transform: rotate(0.6deg); }
-  42% { transform: rotate(2.5deg); }
-  68% { transform: rotate(-0.4deg); }
-  100% { transform: rotate(-2.8deg); }
+  0% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg); }
+  100% { transform: rotate(-8deg); }
 }
 
 .lang-switch {
@@ -2108,6 +2104,7 @@ html[lang="vi"] .essay-lang-note {
 @media (prefers-reduced-motion: reduce) {
   .flow-play__progress-fill { transition: none; }
   .flow-play__panel { animation: none; }
+  .nametag { animation: none; }
   .reveal {
     opacity: 1;
     transform: none;
