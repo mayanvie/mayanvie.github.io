@@ -478,6 +478,11 @@
       el.hidden = el.getAttribute('data-i18n-block') !== lang;
     });
 
+    var cvFile = lang === 'vi' ? 'LeKieuDuyen_CV_LnD.pdf' : 'resume.pdf';
+    document.querySelectorAll('[data-cv-link]').forEach(function (el) {
+      el.setAttribute('href', el.getAttribute('data-cv-link') + cvFile);
+    });
+
     var page = document.body.getAttribute('data-page');
     if (page && pageMeta[page]) {
       document.title = t(pageMeta[page].title);

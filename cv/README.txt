@@ -1,6 +1,4 @@
-Put your CV here as: resume.pdf
+English CV: resume.pdf
+Vietnamese CV: LeKieuDuyen_CV_LnD.pdf
 
-The Download CV button on the site links to:
-  /cv/resume.pdf
-
-When your PDF is ready, copy it into this folder and push to GitHub again.
+The Download CV button switches file when the site language is VI.
