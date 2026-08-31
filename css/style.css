@@ -292,6 +292,28 @@ img { max-width: 100%; height: auto; }
   line-height: 1.6;
 }
 
+.hero-lead p,
+.lead p {
+  margin: 0 0 0.85em;
+}
+
+.hero-lead p:last-child,
+.lead p:last-child {
+  margin-bottom: 0;
+}
+
+.sec-intro {
+  margin: 0.65rem 0 0;
+  max-width: 40em;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+[data-i18n-block][hidden] {
+  display: none !important;
+}
+
 .hero-voice {
   margin: 1.25rem 0 0;
   padding: 0.85rem 1rem;
