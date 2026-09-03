@@ -55,7 +55,8 @@
 
   function sync() {
     btn.setAttribute('aria-label', label());
-    btn.classList.toggle('is-visible', window.scrollY > 360);
+    var threshold = window.innerWidth <= 820 ? 160 : 360;
+    btn.classList.toggle('is-visible', window.scrollY > threshold);
   }
 
   btn.addEventListener('click', function () {

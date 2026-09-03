@@ -28,7 +28,6 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-x: clip;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -40,7 +39,6 @@ body {
   color: var(--ink);
   max-width: 100%;
   overflow-x: hidden;
-  overflow-x: clip;
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
@@ -1296,9 +1294,9 @@ table.program-table th {
 
 .to-top {
   position: fixed;
-  right: 1.15rem;
-  bottom: 1.15rem;
-  z-index: 80;
+  right: max(1.15rem, env(safe-area-inset-right));
+  bottom: max(1.15rem, env(safe-area-inset-bottom));
+  z-index: 120;
   width: 44px;
   height: 44px;
   padding: 0;
@@ -1315,6 +1313,7 @@ table.program-table th {
   pointer-events: none;
   transform: translateY(8px);
   transition: opacity 0.2s ease, transform 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .to-top.is-visible {
@@ -2339,6 +2338,14 @@ html[lang="vi"] .essay-lang-note {
   }
 
   .nametag__photo { border-radius: 10px; }
+
+  .to-top {
+    width: 48px;
+    height: 48px;
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    font-size: 1.25rem;
+  }
 
   .slide-deck {
     width: min(100%, calc(66vh * 16 / 9));
