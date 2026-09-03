@@ -1899,15 +1899,18 @@ html[lang="vi"] .essay-lang-note {
 
 .work-gallery .project-card {
   min-height: 14.5rem;
-  height: 100%;
+  height: auto;
 }
 
 .work-gallery .project-card__link {
-  height: 100%;
+  flex: 1;
+  height: auto;
+  min-height: 0;
 }
 
 .work-gallery .project-card__body {
-  height: 100%;
+  flex: 1;
+  height: auto;
   min-height: 14.5rem;
 }
 
@@ -2472,7 +2475,11 @@ html[lang="vi"] .essay-lang-note {
   }
 
   .work-gallery .project-card,
-  .work-gallery .project-card__body { min-height: 0; }
+  .work-gallery .project-card__link,
+  .work-gallery .project-card__body {
+    min-height: 0;
+    height: auto;
+  }
 
   .flow-play {
     padding: 1rem 1rem 0.85rem;
