@@ -1294,6 +1294,41 @@ table.program-table th {
   font-weight: 600;
 }
 
+.to-top {
+  position: fixed;
+  right: 1.15rem;
+  bottom: 1.15rem;
+  z-index: 80;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--c1) 55%, var(--line));
+  border-radius: 999px;
+  background: var(--c1);
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: none;
+}
+
+.to-top:hover { filter: brightness(1.05); }
+
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: none; }
+}
+
 .center-cta {
   display: flex;
   flex-wrap: wrap;
