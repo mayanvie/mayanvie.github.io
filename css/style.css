@@ -1000,6 +1000,39 @@ img { max-width: 100%; height: auto; }
   line-height: 1.65;
 }
 
+.story__more {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.story.is-open .story__more {
+  grid-template-rows: 1fr;
+}
+
+.story__more-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.story__toggle {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--c1-on);
+  cursor: pointer;
+}
+
+.story__toggle:hover { opacity: 0.85; }
+
+@media (prefers-reduced-motion: reduce) {
+  .story__more { transition: none; }
+}
+
 .path-timeline__item {
   display: grid;
   grid-template-columns: 7.5rem 1.5rem minmax(0, 1fr);

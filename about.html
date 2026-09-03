@@ -7,7 +7,7 @@
   <meta name="description" content="About Le Kieu Duyen — Learning & Talent Operations.">
   <meta name="theme-color" content="#F5F0E8">
   <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('has-motion');</script>
-  <link rel="stylesheet" href="css/style.css?v=24">
+  <link rel="stylesheet" href="css/style.css?v=26">
 </head>
 <body data-page="about">
   <header class="top">
@@ -103,6 +103,30 @@
     </section>
 
     <section class="about-section">
+      <h2 data-i18n="about.switch">Why I'm making this switch</h2>
+      <div class="about-prose story" id="switch-story">
+        <p data-i18n="about.switch.p1">At the end of 2025, I left my job. The company moved to a location too far to commute to. The plan was simple: keep tutoring and teaching assistant work on the side, brush up my Chinese, and apply somewhere new.</p>
+        <div class="story__more" id="switch-story-more">
+          <div class="story__more-inner" data-i18n-html="about.switch.rest">
+            <p>The first keyword I typed into job boards was "content marketing," the role I'd defaulted to since graduation. I liked writing, liked creative content, and I'd actually worked in that role before.</p>
+            <p>But something felt off.</p>
+            <p>I didn't enjoy writing ad scripts, short-form content, or padding out long pieces for information that already existed everywhere online, though if the job required it, I'd still try to do it as well as I could. Then, picturing myself back at a desk doing that same work, I realized, honestly, I had no real motivation left to write a CV.</p>
+            <p>That's when I had no choice but to stop and actually think about what I wanted. I opened ChatGPT, dumped out a long list of my experience, interests, everything I'd done, and asked it to suggest roles that might fit.</p>
+            <p>Looking at that list, everything sounded decent, because I'm the type who likes a lot of things. So I asked myself something simpler: what's the one thing I've done for years and still get excited about?</p>
+            <p>Looking back at past jobs, the answer came into focus. I always lit up when I could take something long and confusing and turn it into something people could grasp quickly. And to me, how someone learns something was never just about the content, it's a psychology problem too.</p>
+            <p>I've also taught myself a lot, Chinese, English, so I know what it's like to figure things out alone, especially as an adult. Every time I cracked something new or solved a problem, I'd usually write it up (a handful of posts live on my Substack now). Alongside that, I've always gotten a specific kind of satisfaction from building systems, for work, for people, that run clean, tight, and easy to track. I couldn't tell you exactly where that comes from. I just know finishing one always feels deeply satisfying.</p>
+            <p>At first, Learning &amp; Development sounded completely foreign to me. I had to look it up more than once, and when I brought it up with friends, almost no one had heard of it either. It took a while before I realized these were things I already liked doing, and had already done, I just hadn't called it that.</p>
+            <p>To be upfront: I don't have a formal L&amp;D title, and I've never run an LMS at real company scale. I first tried closing that gap the structured way, building a whole Notion database to learn L&amp;D theory from the ground up. A few weeks in, I realized it was too slow. So I changed strategy: build a case study first, learn whatever I'm missing while building it, then go deeper afterward, the same way I learn everything else. This portfolio grew out of that shift. It's not a list of what I know; it's evidence of what I've built, what I'm still learning, and where I'm headed.</p>
+            <p>I still think the fastest way to learn is by doing it for real. Right now I'm looking for an in-house L&amp;D / Learning Ops role to build that depth at real scale, and I'm still open to short-term freelance projects, hoping the right people can find me.</p>
+          </div>
+        </div>
+        <button type="button" class="story__toggle" aria-expanded="false" aria-controls="switch-story-more">
+          <span data-i18n="about.switch.more">Read the full story ↓</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="about-section">
       <h2 data-i18n="about.bring">What I bring</h2>
       <p class="section-intro" data-i18n="about.bringIntro">What I lean on across tutoring, guiding, and program work.</p>
       <div class="about-bring-grid notes">
@@ -139,8 +163,31 @@
       <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
     </span>
   </footer>
-  <script src="js/i18n.js?v=14"></script>
+  <script src="js/i18n.js?v=20"></script>
   <script src="js/motion.js?v=4"></script>
   <script src="js/nav.js?v=3"></script>
+  <script>
+    (function () {
+      var story = document.getElementById('switch-story');
+      if (!story) return;
+      var btn = story.querySelector('.story__toggle');
+      var label = btn.querySelector('[data-i18n]');
+      function setOpen(open) {
+        story.classList.toggle('is-open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        var key = open ? 'about.switch.less' : 'about.switch.more';
+        if (label) {
+          label.setAttribute('data-i18n', key);
+          label.textContent = window.MayanvieI18n ? window.MayanvieI18n.t(key) : (open ? 'Show less ↑' : 'Read the full story ↓');
+        }
+      }
+      btn.addEventListener('click', function () {
+        setOpen(!story.classList.contains('is-open'));
+      });
+      document.addEventListener('mayanvie:lang', function () {
+        setOpen(story.classList.contains('is-open'));
+      });
+    })();
+  </script>
 </body>
 </html>
