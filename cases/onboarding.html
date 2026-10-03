@@ -231,6 +231,14 @@
       <p class="text-muted"><strong>Total:</strong> 7 days · 26 hours</p>
     </section>
 
+    <section class="content-block content-block--case-plain" data-tracker>
+      <h2>Cohort tracker (sample)</h2>
+      <p>A 7-day cohort still needs a place to see who's behind, whether people hit the pass bar, and which module keeps getting the same question. I used three tabs for that — progress, assessment, and a content gap log that would later pull from a chatbot's own question log. The live sheet is the sample; it is reconstructed, not data from a real rollout.</p>
+      <p>
+        <a class="btn btn-cta" href="https://docs.google.com/spreadsheets/d/10Kqghgs2SbV8gr-vERPrQ2Ot66PeMUKP8JD9cdQ5CAQ/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">View the tracker ↗</a>
+      </p>
+    </section>
+
     <section class="content-block content-block--case-key">
       <h2>Module highlight: Customer Service (fully developed)</h2>
       <p>This is the module I wrote out completely. Guides are the main guest touchpoint. Real situations don't show up in a slide deck. You need practice and a low-stakes way to mess up before the floor gets busy.</p>
@@ -290,12 +298,8 @@
         <li>An AI Q&amp;A assistant trained on the training materials, so new guides can ask before they ping a senior. Tab 3 (Content Gap Log) would pull from the chatbot's own question log.</li>
         <li>A clear owner for quarterly content updates when the exhibition or policy shifts</li>
       </ul>
+      <p>The sample tracker is <a href="#tracker">further up this page</a>.</p>
     </section>
-
-    <div class="artifact">
-      <p data-i18n="case.tracker.intro">Here's what that tracker would actually look like — a sample built for a 7-day cohort.</p>
-      <a class="btn btn-cta" href="https://docs.google.com/spreadsheets/d/10Kqghgs2SbV8gr-vERPrQ2Ot66PeMUKP8JD9cdQ5CAQ/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" data-i18n="case.tracker.cta">View the tracker ↗</a>
-    </div>
 
     <section class="content-block content-block--case-plain">
       <h2>Reflection</h2>
@@ -396,6 +400,14 @@
       <p class="text-muted"><strong>Tổng:</strong> 7 ngày · 26 giờ</p>
     </section>
 
+    <section class="content-block content-block--case-plain" data-tracker>
+      <h2>Cohort tracker (mẫu)</h2>
+      <p>Một cohort 7 ngày vẫn cần một chỗ để thấy ai đang chậm, chương trình có đạt tiêu chí pass không, và module nào bị hỏi lại cùng một câu. Mình tách 3 tab: tiến độ, đánh giá, và content gap log — tab này về sau sẽ lấy từ log câu hỏi của chatbot nếu có trợ lý Q&amp;A trên tài liệu training. Sheet sống là sample; đây là bản tái dựng, không phải dữ liệu rollout thật.</p>
+      <p>
+        <a class="btn btn-cta" href="https://docs.google.com/spreadsheets/d/10Kqghgs2SbV8gr-vERPrQ2Ot66PeMUKP8JD9cdQ5CAQ/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Xem tracker ↗</a>
+      </p>
+    </section>
+
     <section class="content-block content-block--case-key">
       <h2>Module viết đầy đủ: Customer Service</h2>
       <p>Đây là module mình viết hoàn chỉnh. Guide là người trực tiếp gặp khách, nên những tình huống quan trọng không thể chỉ nằm trên slide. Người học cần có cơ hội luyện tập và được phép sai khi áp lực còn thấp, trước khi đứng trên sàn đông khách.</p>
@@ -453,12 +465,8 @@
         <li>Một trợ lý Q&amp;A AI được huấn luyện trên tài liệu training, để guide mới hỏi trước khi phải gọi senior. Tab 3 (Content Gap Log) lấy dữ liệu từ chính log câu hỏi của chatbot.</li>
         <li>Có người chịu trách nhiệm cập nhật nội dung định kỳ khi triển lãm hoặc policy thay đổi.</li>
       </ul>
+      <p>Sample tracker nằm <a href="#tracker">phía trên trang này</a>.</p>
     </section>
-
-    <div class="artifact">
-      <p data-i18n="case.tracker.intro">Tracker sẽ trông như thế này — bản mẫu cho một cohort 7 ngày.</p>
-      <a class="btn btn-cta" href="https://docs.google.com/spreadsheets/d/10Kqghgs2SbV8gr-vERPrQ2Ot66PeMUKP8JD9cdQ5CAQ/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" data-i18n="case.tracker.cta">Xem tracker ↗</a>
-    </div>
 
     <section class="content-block content-block--case-plain">
       <h2>Suy nghĩ lại</h2>
@@ -481,11 +489,20 @@
       <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener">Substack</a>
     </span>
   </footer>
-  <script src="../js/i18n.js?v=14"></script>
+  <script src="../js/i18n.js?v=26"></script>
   <script src="../js/motion.js?v=4"></script>
   <script src="../js/nav.js?v=3"></script>
   <script>
     (function () {
+      function pinTracker() {
+        document.querySelectorAll('[data-tracker]').forEach(function (el) {
+          if (el.closest('[hidden]')) el.removeAttribute('id');
+          else el.id = 'tracker';
+        });
+      }
+      document.addEventListener('mayanvie:lang', pinTracker);
+      pinTracker();
+
       document.querySelectorAll('.slide-deck').forEach(function (deck) {
         var viewport = deck.querySelector('.slide-deck__viewport');
         var slides = viewport.querySelectorAll('img');

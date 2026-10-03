@@ -41,6 +41,8 @@
       'meta.cashier.desc': 'Onboarding guide for new Order & Cashier staff at an independent café/restaurant — shift sequence, POS rules, and a job aid written from the floor.',
       'meta.essay.title': "Your brain doesn't start at zero — Le Kieu Duyen",
       'meta.essay.desc': 'Essay on schemas, memory, and language learning — originally published Jun 2025.',
+      'meta.adults.title': "Adults aren't afraid of learning a language — Le Kieu Duyen",
+      'meta.adults.desc': 'Notes from an adult still learning, on the fears sitting next to language study. Originally published Oct 2026 on Substack.',
       'home.kicker': 'Learning & talent ops · Ho Chi Minh City',
       'home.hero': "Hi, I'm <em>Duyen</em>.",
       'home.heroLead': "<p>I design learning programs for people who get quietly stuck. The material is rarely the hard part — it's the path no one made clear. Asking twice can still feel like one question too many.</p>",
@@ -102,6 +104,7 @@
       'home.b3.tag': 'operations',
       'home.b3.title': 'Systems that stick',
       'home.b3.desc': 'Modules, checklists, trackers, follow-up. So a program can run again without reinventing everything each time.',
+      'home.b3.link': 'See the cohort tracker →',
       'home.talk': "Let's talk",
       'home.cta': 'Open to <strong>Learning & Talent Operations</strong> and L&D roles in Vietnam. Email or connect on LinkedIn. Happy to walk through the case study.',
       'work.eyebrow': 'Portfolio',
@@ -130,11 +133,14 @@
       'work.essay.title': "Your brain doesn't start at zero: it starts with a schema",
       'work.essay.desc': 'Schemas, memory, and why starting from zero never quite feels true.',
       'work.essay.cta': 'Read here →',
+      'work.adults.tag': 'Essay · Oct 2026',
+      'work.adults.title': "Adults aren't afraid of learning a language. They're afraid of…",
+      'work.adults.desc': 'Notes from an adult still learning, on the fears sitting next to language study.',
       'work.e2.title': 'Input vs. output: why consuming alone rarely builds skill',
       'work.e2.desc': 'On the gap between watching, reading, and actually rehearsing. From my own language study.',
       'work.e3.title': 'What blocks adults from learning',
       'work.e3.desc': "Memory, motivation, and the friction that often isn't the subject itself. Notes as I test ideas in practice.",
-      'work.foot': 'More on <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener"><em>One note at a time</em> →</a>',
+      'work.foot': 'More on <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener"><em>One Try, One Note</em> →</a>',
       'work.toolkit': 'Toolkit',
       'work.tools': 'Tools I use',
       'work.toolsNote': "I pick tools for findability and handoff. A shiny new app doesn't help much if someone else can't find the same file next month.",
@@ -231,7 +237,11 @@
       'essay.tag': 'Essay · Jun 2025',
       'essay.title': "Your brain doesn't start at zero — it starts with a schema",
       'essay.enNote': 'This essay is in English (original on Substack).',
-      'essay.sub': 'The brain doesn\'t like starting from zero — it starts with a "schema." An essay on language learning, especially the part about remembering vocabulary.'
+      'essay.sub': 'The brain doesn\'t like starting from zero — it starts with a "schema." An essay on language learning, especially the part about remembering vocabulary.',
+      'adults.tag': 'Essay · Oct 2026',
+      'adults.title': "Adults aren't afraid of learning a language. They're afraid of…",
+      'adults.sub': 'Notes from an adult still learning, on the fears sitting next to language study.',
+      'adults.cta': 'Read on Substack →'
     },
     vi: {
       'nav.home': 'Trang chủ',
@@ -269,6 +279,8 @@
       'meta.cashier.desc': 'Job aid onboarding cho nhân viên Order & Cashier mới tại quán độc lập — trình tự ca, quy tắc POS, viết từ sàn.',
       'meta.essay.title': 'Não không thích bắt đầu bằng số 0 — Lê Kiều Duyên',
       'meta.essay.desc': 'Bài viết về schema, trí nhớ và học ngoại ngữ — đăng tháng 6/2025 trên Substack.',
+      'meta.adults.title': 'Người lớn không sợ học ngoại ngữ — Lê Kiều Duyên',
+      'meta.adults.desc': 'Ghi chép của một người lớn vẫn đang học, về mấy nỗi sợ bên cạnh việc học ngoại ngữ. Đăng tháng 10/2026 trên Substack.',
       'home.kicker': 'Learning & talent ops · TP. Hồ Chí Minh',
       'home.hero': 'Xin chào, mình là <em>Kiều Duyên</em>.',
       'home.heroLead': '<p>Qua hơn hai năm làm việc và tự học, mình nhận ra rằng đôi khi nội dung học không hề khó. Điều khó hơn là biết bắt đầu từ đâu và nên đi theo thứ tự nào.</p><p>Đặc biệt với người lớn, nếu phải hỏi lại quá nhiều lần, họ có thể thấy thiếu tự tin và mất thời gian. Vì vậy, mình muốn thiết kế những tài liệu rõ ràng, dễ theo dõi và có thể dùng ngay từ lần đầu mở ra.</p><p>Người học có thể bắt đầu với phần mình cần trước, rồi từ từ tìm hiểu thêm khi đã sẵn sàng.</p>',
@@ -330,6 +342,7 @@
       'home.b3.tag': 'operations',
       'home.b3.title': 'Hệ thống dùng được lâu',
       'home.b3.desc': 'Module, checklist, tracker và follow-up giúp chương trình có thể chạy lại mà không phải làm lại từ đầu mỗi lần.',
+      'home.b3.link': 'Xem cohort tracker →',
       'home.talk': 'Liên hệ',
       'home.cta': 'Mình đang tìm cơ hội trong <strong>Learning & Talent Operations</strong> và L&amp;D tại Việt Nam. Bạn có thể email hoặc kết nối với mình trên LinkedIn. Mình rất sẵn lòng cùng bạn đi qua các case study.',
       'work.eyebrow': 'Portfolio',
@@ -358,11 +371,14 @@
       'work.essay.title': 'Não không thích bắt đầu bằng số 0, mà bằng “schema”',
       'work.essay.desc': 'Schema, trí nhớ và vì sao việc “bắt đầu từ số 0” không bao giờ hoàn toàn đúng.',
       'work.essay.cta': 'Đọc tại đây →',
+      'work.adults.tag': 'Bài viết · 10/2026',
+      'work.adults.title': 'Người lớn không sợ học ngoại ngữ, họ sợ…',
+      'work.adults.desc': 'Ghi chép của một người lớn vẫn đang học, về mấy nỗi sợ bên cạnh việc học ngoại ngữ.',
       'work.e2.title': 'Input vs. output: chỉ xem và đọc hiếm khi tạo ra kỹ năng',
       'work.e2.desc': 'Về khoảng cách giữa việc tiếp nhận thông tin và thực sự luyện tập, từ trải nghiệm học ngôn ngữ của mình.',
       'work.e3.title': 'Điều gì cản trở người lớn khi học',
       'work.e3.desc': 'Trí nhớ, động lực và những trở ngại không phải lúc nào cũng nằm ở môn học.',
-      'work.foot': 'Đọc thêm trên <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener"><em>One note at a time</em> →</a>',
+      'work.foot': 'Đọc thêm trên <a href="https://mayanvie.substack.com/" target="_blank" rel="noopener"><em>One Try, One Note</em> →</a>',
       'work.toolkit': 'Công cụ',
       'work.tools': 'Tool mình hay dùng',
       'work.toolsNote': 'Mình chọn công cụ dựa trên hai điều: dễ tìm lại và dễ bàn giao. Một ứng dụng đẹp sẽ không giúp nhiều nếu vài tháng sau người khác không biết file nằm ở đâu.',
@@ -459,7 +475,11 @@
       'essay.tag': 'Bài viết · 6/2025',
       'essay.title': 'Não không thích bắt đầu bằng số 0, mà bằng “schema”',
       'essay.enNote': 'Bài viết bằng tiếng Anh — bản gốc nằm trên Substack.',
-      'essay.sub': 'Một bài viết liên quan đến việc học ngoại ngữ, đặc biệt là cách ghi nhớ từ vựng.'
+      'essay.sub': 'Một bài viết liên quan đến việc học ngoại ngữ, đặc biệt là cách ghi nhớ từ vựng.',
+      'adults.tag': 'Bài viết · 10/2026',
+      'adults.title': 'Người lớn không sợ học ngoại ngữ, họ sợ…',
+      'adults.sub': 'Một bản ghi chép của một người lớn vẫn đang học, về mấy nỗi sợ bên cạnh việc học ngoại ngữ.',
+      'adults.cta': 'Đọc trên Substack →'
     }
   };
 
@@ -470,7 +490,8 @@
     case: { title: 'meta.case.title', desc: 'meta.case.desc' },
     'case-sales': { title: 'meta.sales.title', desc: 'meta.sales.desc' },
     'case-cashier': { title: 'meta.cashier.title', desc: 'meta.cashier.desc' },
-    essay: { title: 'meta.essay.title', desc: 'meta.essay.desc' }
+    essay: { title: 'meta.essay.title', desc: 'meta.essay.desc' },
+    'essay-adults': { title: 'meta.adults.title', desc: 'meta.adults.desc' }
   };
 
   function getLang() {
@@ -542,7 +563,7 @@
     wrap.setAttribute('aria-label', t('lang.label'));
     wrap.innerHTML =
       '<button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" aria-label="English">EN</button>' +
-      '<button type="button" class="lang-switch__btn" data-lang="vi" aria-pressed="false" aria-label="Xem bản tiếng Việt">Tiếng Việt</button>';
+      '<button type="button" class="lang-switch__btn" data-lang="vi" aria-pressed="false" aria-label="Tiếng Việt">VI</button>';
     var cv = nav.querySelector('.pill');
     if (cv) nav.insertBefore(wrap, cv);
     else nav.appendChild(wrap);
