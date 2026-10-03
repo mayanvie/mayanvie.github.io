@@ -1060,6 +1060,10 @@ img { max-width: 100%; height: auto; }
 
 .story__toggle:hover { opacity: 0.85; }
 
+.story__cta {
+  margin: 1rem 0 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .story__more { transition: none; }
 }
