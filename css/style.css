@@ -463,7 +463,19 @@ img { max-width: 100%; height: auto; }
 }
 
 .profile-photo--about {
-  width: min(220px, 48vw);
+  width: 9.75rem;
+  margin: 0.15rem 0 0;
+}
+
+.profile-photo--about::before {
+  border-radius: 12px;
+  transform: translate(7px, 7px);
+}
+
+.profile-photo--about img {
+  border-radius: 12px;
+  border-width: 3px;
+  object-position: center 18%;
 }
 
 /* —— Sections —— */
@@ -974,31 +986,50 @@ img { max-width: 100%; height: auto; }
 /* —— About —— */
 .about-intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 9.75rem;
+  gap: 1.35rem 1.5rem;
   align-items: start;
-  padding-bottom: 1.75rem;
+  padding: 1.75rem 0 1.35rem;
   border-bottom: 1px solid var(--line);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
+}
+
+.about-intro h1 {
+  font-size: clamp(1.85rem, 3.4vw, 2.2rem);
+  letter-spacing: -0.02em;
+}
+
+.about-intro .lead {
+  max-width: 38em;
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.62;
 }
 
 .hero-role {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   color: var(--c1-on);
-  margin: 0.35rem 0 0.75rem;
+  margin: 0.3rem 0 0.65rem;
 }
 
-.about-section { margin: 2rem 0; }
+.about-section { margin: 1.6rem 0; }
+
+.about-section > h2 {
+  font-size: 1.42rem;
+  margin-bottom: 0.8rem;
+}
 
 .about-prose { max-width: 42em; }
 .about-prose p {
-  margin: 0 0 1rem;
-  font-size: 0.95rem;
+  margin: 0 0 0.85rem;
+  font-size: 0.94rem;
   color: var(--ink-soft);
   line-height: 1.65;
 }
+
+.about-prose p:last-child { margin-bottom: 0; }
 
 .story__more {
   display: grid;
@@ -1033,11 +1064,17 @@ img { max-width: 100%; height: auto; }
   .story__more { transition: none; }
 }
 
+.path-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .path-timeline__item {
   display: grid;
   grid-template-columns: 7.5rem 1.5rem minmax(0, 1fr);
   gap: 0 1rem;
-  padding-bottom: 1.35rem;
+  padding-bottom: 0.95rem;
 }
 
 .path-timeline__when {
@@ -1059,7 +1096,7 @@ img { max-width: 100%; height: auto; }
   position: absolute;
   left: 50%;
   top: 0.4rem;
-  bottom: -1.35rem;
+  bottom: -0.95rem;
   width: 2px;
   transform: translateX(-50%);
   background: var(--line);
@@ -1082,7 +1119,7 @@ img { max-width: 100%; height: auto; }
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 10px;
-  padding: 0.85rem 1rem;
+  padding: 0.7rem 0.9rem;
 }
 
 .path-timeline__title {
@@ -2350,8 +2387,7 @@ html[lang="vi"] .essay-lang-note {
     align-self: stretch;
   }
 
-  .hero-grid,
-  .about-intro { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: 1fr; }
 
   .hero--solo,
   .hero--home {
@@ -2434,7 +2470,18 @@ html[lang="vi"] .essay-lang-note {
     font-size: 1.1rem;
   }
 
-  .profile-photo--about { order: -1; width: min(220px, 70vw); }
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 1.05rem;
+    padding-top: 1.35rem;
+    justify-items: start;
+  }
+
+  .profile-photo--about {
+    order: -1;
+    width: 8.5rem;
+    margin: 0;
+  }
   .notes,
   .about-bring-grid,
   .shape-grid { grid-template-columns: 1fr; }
